@@ -8,7 +8,7 @@ MONIKER="sactest"
 KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
-# Set dedicated home directory for the evmosd instance
+# Set dedicated home directory for the sacasd instance
 HOMEDIR="$HOME/.tmp-sacasd"
 # to trace evm
 #TRACE="--trace"
@@ -50,7 +50,7 @@ while [[ $# -gt 0 ]]; do
 		shift # Move past the argument
 		;;
 	--no-install)
-		echo "Flag --no-install passed -> Skipping installation of the evmosd binary."
+		echo "Flag --no-install passed -> Skipping installation of the sacasd binary."
 		install=false
 		shift # Move past the flag
 		;;
@@ -189,20 +189,20 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 	sed -i.bak 's/pruning-interval = "0"/pruning-interval = "10"/g' "$APP_TOML"
 
 	# Allocate genesis accounts (cosmos formatted addresses)
-	sacasd add-genesis-account "$(evmosd keys show "$VAL_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 100000000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
-	sacasd add-genesis-account "$(evmosd keys show "$USER1_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
-	sacasd add-genesis-account "$(evmosd keys show "$USER2_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
-	sacasd add-genesis-account "$(evmosd keys show "$USER3_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
-	sacasd add-genesis-account "$(evmosd keys show "$USER4_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
+	sacasd add-genesis-account "$(sacasd keys show "$VAL_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 100000000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
+	sacasd add-genesis-account "$(sacasd keys show "$USER1_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
+	sacasd add-genesis-account "$(sacasd keys show "$USER2_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
+	sacasd add-genesis-account "$(sacasd keys show "$USER3_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
+	sacasd add-genesis-account "$(sacasd keys show "$USER4_KEY" -a --keyring-backend "$KEYRING" --home "$HOMEDIR")" 1000000000000000000000sac --keyring-backend "$KEYRING" --home "$HOMEDIR"
 
 	# Sign genesis transaction
 	sacasd gentx "$VAL_KEY" 1000000000000000000000sac --gas-prices ${BASEFEE}sac --keyring-backend "$KEYRING" --chain-id "$CHAINID" --home "$HOMEDIR"
 	## In case you want to create multiple validators at genesis
-	## 1. Back to `evmosd keys add` step, init more keys
-	## 2. Back to `evmosd add-genesis-account` step, add balance for those
-	## 3. Clone this ~/.evmosd home directory into some others, let's say `~/.clonedSacasd`
+	## 1. Back to `sacasd keys add` step, init more keys
+	## 2. Back to `sacasd add-genesis-account` step, add balance for those
+	## 3. Clone this ~/.sacasd home directory into some others, let's say `~/.clonedSacasd`
 	## 4. Run `gentx` in each of those folders
-	## 5. Copy the `gentx-*` folders under `~/.clonedSacasd/config/gentx/` folders into the original `~/.evmosd/config/gentx`
+	## 5. Copy the `gentx-*` folders under `~/.clonedSacasd/config/gentx/` folders into the original `~/.sacasd/config/gentx`
 
 	# Collect genesis tx
 	sacasd collect-gentxs --home "$HOMEDIR"
@@ -216,7 +216,7 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 fi
 
 # Start the node
-evmosd start \
+sacasd start \
 	--metrics "$TRACE" \
 	--log_level $LOGLEVEL \
 	--minimum-gas-prices=0.00001sac \
