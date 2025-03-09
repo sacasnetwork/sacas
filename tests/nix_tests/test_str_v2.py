@@ -36,7 +36,7 @@ UPDATE_PARAMS_PROP = {
     "messages": [
         {
             "@type": "/evmos.erc20.v1.MsgUpdateParams",
-            "authority": "evmos10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
+            "authority": "sac10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
             "params": {
                 "enable_erc20": True,
                 "native_precompiles": [],

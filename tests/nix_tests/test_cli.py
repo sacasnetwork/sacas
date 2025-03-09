@@ -131,7 +131,7 @@ def test_tx_flags(evmos_cluster):
         try:
             res = node.transfer(
                 "signer1",
-                "evmos10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky",
+                "sac10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky",
                 "100000000000000sac",
                 False,
                 **tc["flags"],

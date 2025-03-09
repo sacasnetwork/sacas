@@ -85,8 +85,8 @@ func (suite *LedgerTestSuite) getMockTxAmino() []byte {
 				"type":"cosmos-sdk/MsgSend",
 				"value":{
 					"amount":[{"amount":"150","denom":"atom"}],
-					"from_address":"evmos10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky",
-					"to_address":"evmos1fx944mzagwdhx0wz7k9tfztc8g3lkfk6rrgv6l"
+					"from_address":"sac10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky",
+					"to_address":"sac1fx944mzagwdhx0wz7k9tfztc8g3lkfk6rrgv6l"
 				}
 			}],
 			"sequence":"6"
@@ -102,8 +102,8 @@ func (suite *LedgerTestSuite) getMockTxProtobuf() []byte {
 
 	memo := "memo"
 	msg := bankTypes.NewMsgSend(
-		sdk.MustAccAddressFromBech32("evmos10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky"),
-		sdk.MustAccAddressFromBech32("evmos1fx944mzagwdhx0wz7k9tfztc8g3lkfk6rrgv6l"),
+		sdk.MustAccAddressFromBech32("sac10jmp6sgh4cc6zt3e8gw05wavvejgr5pwjnpcky"),
+		sdk.MustAccAddressFromBech32("sac1fx944mzagwdhx0wz7k9tfztc8g3lkfk6rrgv6l"),
 		[]sdk.Coin{
 			{
 				Denom:  "atom",

@@ -81,7 +81,7 @@ func AddrCmd() *cobra.Command {
 		Short: "Convert an address between hex and bech32",
 		Long:  "Convert an address between hex encoding and bech32.",
 		Example: fmt.Sprintf(
-			`$ %s debug addr evmos1qqqqhe5pnaq5qq39wqkn957aydnrm45sdn8583
+			`$ %s debug addr sac1qqqqhe5pnaq5qq39wqkn957aydnrm45sdn8583
 $ %s debug addr 0x00000Be6819f41400225702D32d3dd23663Dd690 --prefix evmos`, version.AppName, version.AppName),
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {

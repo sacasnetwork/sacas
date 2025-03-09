@@ -23,7 +23,7 @@ func (s *IntegrationTestSuite) executeTransactions() {
 
 // SendBankTransfer sends a bank transfer to check that the transactions are still working after the upgrade.
 func (s *IntegrationTestSuite) sendBankTransfer(ctx context.Context) {
-	receiver := "evmos1jcltmuhplrdcwp7stlr4hlhlhgd4htqh3a79sq"
+	receiver := "sac1jcltmuhplrdcwp7stlr4hlhlhgd4htqh3a79sq"
 	sentCoins := sdk.Coins{sdk.NewInt64Coin("sac", 10000000000)}
 
 	balancePre, err := s.upgradeManager.GetBalance(ctx, s.upgradeParams.ChainID, receiver)

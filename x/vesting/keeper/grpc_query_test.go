@@ -47,7 +47,7 @@ func TestBalances(t *testing.T) {
 			name: "invalid address",
 			malleate: func() {
 				req = &types.QueryBalancesRequest{
-					Address: "evmos1",
+					Address: "sac1",
 				}
 			},
 			expPass:     false,

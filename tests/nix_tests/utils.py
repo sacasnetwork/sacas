@@ -74,7 +74,7 @@ REGISTER_ERC20_PROP = {
     "messages": [
         {
             "@type": "/evmos.erc20.v1.MsgRegisterERC20",
-            "authority": "evmos10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
+            "authority": "sac10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
             "erc20addresses": ["ADDRESS_HERE"],
         }
     ],

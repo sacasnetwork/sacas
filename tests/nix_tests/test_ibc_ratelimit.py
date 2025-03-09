@@ -23,7 +23,7 @@ RATE_LIMIT_PROP = {
     "messages": [
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
-            "authority": "evmos10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
+            "authority": "sac10d07y265gmmuvt4z0w9aw880jnsr700jcrztvm",
             "denom": "sac",
             "channel_id": "channel-0",
             "max_percent_send": "10",

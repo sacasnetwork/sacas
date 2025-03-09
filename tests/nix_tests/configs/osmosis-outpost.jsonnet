@@ -17,7 +17,7 @@ config {
               "@type": "/ethermint.types.v1.EthAccount",
               "base_account": {
                 "account_number": "12",
-                "address": "evmos1tkm8d9krczydl06c357asj05gfn07rl6vw239z",
+                "address": "sac1tkm8d9krczydl06c357asj05gfn07rl6vw239z",
                 "pub_key": null,
                 "sequence": "0"
               },
