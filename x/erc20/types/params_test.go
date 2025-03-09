@@ -116,7 +116,7 @@ func (suite *ParamsTestSuite) TestParamsValidate() {
 		{
 			"repeated address - one EIP-55 other not",
 			func() types.Params {
-				return types.NewParams(true, []string{}, []string{"0xcc491f589b45d4a3c679016195b3fb87d7848210", "0xcc491f589B45d4a3C679016195B3FB87D7848210"})
+				return types.NewParams(true, []string{}, []string{"0xcc", "0xcc491f589B45d4a3C679016195B3FB87D7848210"})
 			},
 			true,
 			"duplicate precompile",
@@ -176,7 +176,7 @@ func (suite *ParamsTestSuite) TestIsNativePrecompile() {
 		{
 			"NOT EIP-55 address - is native precompile",
 			func() types.Params {
-				return types.NewParams(true, []string{"0xcc491f589b45d4a3c679016195b3fb87d7848210"}, nil)
+				return types.NewParams(true, []string{"0xcc"}, nil)
 			},
 			common.HexToAddress(types.WSACContractTestnet),
 			true,
@@ -219,7 +219,7 @@ func (suite *ParamsTestSuite) TestIsDynamicPrecompile() {
 		{
 			"NOT EIP-55 address - is dynamic precompile",
 			func() types.Params {
-				return types.NewParams(true, nil, []string{"0xcc491f589b45d4a3c679016195b3fb87d7848210"})
+				return types.NewParams(true, nil, []string{"0xcc"})
 			},
 			common.HexToAddress(types.WSACContractTestnet),
 			true,
@@ -252,7 +252,7 @@ func TestValidatePrecompiles(t *testing.T) {
 		},
 		{
 			"same address but one EIP-55 and other don't",
-			[]string{"0xcc491f589b45d4a3c679016195b3fb87d7848210", "0xcc491f589B45d4a3C679016195B3FB87D7848210"},
+			[]string{"0xcc", "0xcc491f589B45d4a3C679016195B3FB87D7848210"},
 			false,
 			"",
 		},

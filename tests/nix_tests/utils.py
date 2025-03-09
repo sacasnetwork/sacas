@@ -36,7 +36,7 @@ KEYS = {name: account.key for name, account in ACCOUNTS.items()}
 ADDRS = {name: account.address for name, account in ACCOUNTS.items()}
 SAC_ADDRESS_PREFIX = "evmos"
 DEFAULT_DENOM = "sac"
-WSAC_ADDRESS = Web3.toChecksumAddress("0xD4949664cD82660AaE99bEdc034a0deA8A0bd517")
+WSAC_ADDRESS = Web3.toChecksumAddress("0xD4")
 TEST_CONTRACTS = {
     "TestERC20A": "TestERC20A.sol",
     "TestRevert": "TestRevert.sol",
