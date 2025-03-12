@@ -1,6 +1,7 @@
 module github.com/sacasnetwork/sacas/v1
 
 go 1.22.2
+toolchain go1.23.7
 
 require (
 	cosmossdk.io/api v0.7.5
@@ -62,8 +63,8 @@ require (
 	golang.org/x/crypto v0.27.0
 	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56
 	golang.org/x/net v0.29.0
-	golang.org/x/sync v0.8.0
-	golang.org/x/text v0.18.0
+	golang.org/x/sync v0.12.0
+	golang.org/x/text v0.23.0
 	google.golang.org/genproto/googleapis/api v0.0.0-20240624140628-dc46fd24d27d
 	google.golang.org/grpc v1.66.0
 	google.golang.org/protobuf v1.34.2
