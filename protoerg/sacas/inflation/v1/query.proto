@@ -1,0 +1,102 @@
+
+
+  ];
+  ];
+  ];
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+    (amino.dont_omitempty) = true
+    (amino.dont_omitempty) = true,
+    (amino.dont_omitempty) = true,
+  // circulating_supply is the total amount of coins in circulation
+  // CirculatingSupply retrieves the total number of tokens that are in
+  // circulation (i.e. excluding unvested tokens).
+// Copyright Tharsis Labs Ltd.(Sacas)
+  cosmos.base.v1beta1.DecCoin circulating_supply = 1 [
+  cosmos.base.v1beta1.DecCoin epoch_mint_provision = 1 [
+  // epoch_mint_provision is the current minting per epoch provision value.
+  // EpochMintProvision retrieves current minting epoch provision value.
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"
+    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins"
+    (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+    (gogoproto.nullable) = false,
+    (gogoproto.nullable) = false,
+    (gogoproto.nullable) = false,
+import "amino/amino.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "sacas/inflation/v1/genesis.proto";
+  // inflation_rate by which the total supply increases within one period
+  // InflationRate retrieves the inflation rate of the current period.
+message QueryCirculatingSupplyRequest {}
+message QueryCirculatingSupplyResponse {
+  message QueryEpochMintProvisionRequest {}
+  message QueryEpochMintProvisionResponse {
+    message QueryInflationRateRequest {}
+    message QueryInflationRateResponse {
+      message QueryParamsRequest {}
+      message QueryParamsResponse {
+        message QueryPeriodRequest {}
+        message QueryPeriodResponse {
+          message QuerySkippedEpochsRequest {}
+          message QuerySkippedEpochsResponse {
+            // method.
+            // method.
+            option (google.api.http).get = "/sacas/inflation/v1/circulating_supply";
+            option (google.api.http).get = "/sacas/inflation/v1/epoch_mint_provision";
+            option (google.api.http).get = "/sacas/inflation/v1/inflation_rate";
+            option (google.api.http).get = "/sacas/inflation/v1/params";
+            option (google.api.http).get = "/sacas/inflation/v1/period";
+            option (google.api.http).get = "/sacas/inflation/v1/skipped_epochs";
+            option go_package = "github.com/sacasnetwork/sacas/v1/x/inflation/v1/types";
+            package sacas.inflation.v1;
+            // params defines the parameters of the module.
+            Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+            // Params retrieves the total set of minting parameters.
+            // period is the current minting per epoch provision value.
+            // Period retrieves current period.
+            // QueryCirculatingSupplyRequest is the request type for the
+            // QueryCirculatingSupplyResponse is the response type for the
+            // Query/CirculatingSupply RPC method.
+            // Query/CirculatingSupply RPC method.
+            // QueryEpochMintProvisionRequest is the request type for the
+            // QueryEpochMintProvisionResponse is the response type for the
+            // Query/EpochMintProvision RPC method.
+            // Query/EpochMintProvision RPC method.
+            // QueryInflationRateRequest is the request type for the Query/InflationRate RPC
+            // QueryInflationRateResponse is the response type for the Query/InflationRate
+            // QueryParamsRequest is the request type for the Query/Params RPC method.
+            // QueryParamsResponse is the response type for the Query/Params RPC method.
+            // QueryPeriodRequest is the request type for the Query/Period RPC method.
+            // QueryPeriodResponse is the response type for the Query/Period RPC method.
+            // Query provides defines the gRPC querier service.
+            // QuerySkippedEpochsRequest is the request type for the Query/SkippedEpochs RPC
+            // QuerySkippedEpochsResponse is the response type for the Query/SkippedEpochs
+            rpc CirculatingSupply(QueryCirculatingSupplyRequest) returns (QueryCirculatingSupplyResponse) {
+              rpc EpochMintProvision(QueryEpochMintProvisionRequest) returns (QueryEpochMintProvisionResponse) {
+                rpc InflationRate(QueryInflationRateRequest) returns (QueryInflationRateResponse) {
+                  // RPC method.
+                  // RPC method.
+                  rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+                    rpc Period(QueryPeriodRequest) returns (QueryPeriodResponse) {
+                      rpc SkippedEpochs(QuerySkippedEpochsRequest) returns (QuerySkippedEpochsResponse) {
+                        service Query {
+                          // skipped_epochs is the number of epochs that the inflation module has been disabled.
+                          // SkippedEpochs retrieves the total number of skipped epochs.
+                          // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  string inflation_rate = 1 [
+syntax = "proto3";
+  uint64 period = 1;
+  uint64 skipped_epochs = 1;

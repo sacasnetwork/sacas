@@ -1,0 +1,21 @@
+name: "Consensus Warn"
+
+permissions: read-all
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  main:
+    permissions:
+      pull-requests: write # For reading the PR and posting comment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: orijtech/consensuswarn@main
+        with:
+          roots: "github.com/sacasnetwork/sacas/v1/app.Sacas.FinalizeBlock,github.com/sacasnetwork/sacas/v1/app.Sacas.BeginBlocker,github.com/sacasnetwork/sacas/v1/app.Sacas.EndBlocker"

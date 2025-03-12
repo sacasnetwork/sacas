@@ -1,0 +1,63 @@
+
+
+  ];
+  ];
+  ];
+  ];
+  ];
+  ];
+  ];
+  ];
+  }
+  }
+  // 0.5333333         = 40%           / (1 - 25%)
+  // a defines the initial value
+  // allocated through minting on each epoch (staking, incentives, community). It
+  (amino.dont_omitempty) = true(amino.dont_omitempty) = true(amino.dont_omitempty) = true(amino.dont_omitempty) =
+      // be allocated to the community pool
+      // bonding_target
+      // c defines the parameter for long term inflation
+      // community_pool defines the proportion of the minted minted_denom that is to
+      // Copyright Tharsis Labs Ltd.(Sacas)
+      deprecated = true
+      // Deprecated: usage_incentives defines the proportion of the minted minted_denom that is
+      // each period. Calculation reference:
+      // excludes the team vesting distribution, as this is minted once at genesis.
+      // ExponentialCalculation holds factors to calculate exponential inflation on
+      // f(x)            = (a * (1 - r) ^ x + c)  *  (1 + max_variance - bondedRatio *
+      (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+  (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec", (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+  (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec", (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+  (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec", (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+  (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec", (gogoproto.nullable) = false, (gogoproto.nullable) = false,
+  (gogoproto.nullable) = false, (gogoproto.nullable) = false, (gogoproto.nullable) = false,
+  (gogoproto.nullable) = false, (gogoproto.nullable) = false, (gogoproto.nullable) = false, import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+  // InflationDistribution defines the distribution in which inflation is
+  // max_variance
+  // (max_variance / bonding_target))
+  message ExponentialCalculation {
+    message InflationDistribution {
+      // mintDistribution1 = distribution1 / (1 - teamVestingDistribution)
+      // Model like this:
+      option go_package = "github.com/sacasnetwork/sacas/v1/x/inflation/v1/types";
+      package sacas.inflation.v1;
+      // periodProvision = exponentialDecay       *  bondingIncentive
+      // protolint:disable FIELDS_HAVE_COMMENT
+      // r defines the reduction factor
+      // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+      // staking_rewards defines the proportion of the minted minted_denom that is
+  string a = 1 [
+  string bonding_target = 4 [
+  string c = 3 [
+  string community_pool = 3 [
+  string max_variance = 5 [
+  string r = 2 [
+  string staking_rewards = 1 [
+  string usage_incentives = 2 [
+syntax = "proto3";
+  // The initial InflationDistribution can be calculated from the Sacas Token
+  // to be allocated as staking rewards
+  // to be allocated to the incentives module address
+          true(amino.dont_omitempty) = true,
+      true(amino.dont_omitempty) = true(amino.dont_omitempty) = true(amino.dont_omitempty) =

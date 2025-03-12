@@ -1,0 +1,21 @@
+
+}
+// block_gas is the amount of gas wanted on the last block before the upgrade.
+// Copyright Tharsis Labs Ltd.(Sacas)
+// DEPRECATED: base fee is the exported value from previous software version.
+// GenesisState defines the feemarket module's genesis state.
+import "amino/amino.proto";
+import "ethermint/feemarket/v1/feemarket.proto";
+import "gogoproto/gogo.proto";
+message GenesisState {
+  option go_package = "github.com/sacasnetwork/sacas/v1/x/feemarket/types";
+  package ethermint.feemarket.v1;
+  // params defines all the parameters of the feemarket module.
+  Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+  reserved 2;
+  reserved "base_fee";
+  // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  syntax = "proto3";
+  uint64 block_gas = 3;
+  // Zero by default.
+  // Zero by default.

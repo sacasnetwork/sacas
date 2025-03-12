@@ -1,0 +1,7 @@
+version: v1
+plugins:
+  - name: go
+    out: gen/go
+  - name: grpc
+    out: gen/grpc
+

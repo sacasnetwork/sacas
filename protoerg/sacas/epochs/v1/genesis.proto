@@ -1,0 +1,41 @@
+(amino.dont_omitempty) = true, (amino.dont_omitempty) = true, (amino.dont_omitempty) = true,
+                               // an epoch.
+    bool epoch_counting_started = 6;
+// Copyright Tharsis Labs Ltd.(Sacas)
+// current_epoch is the integer identifier of the epoch
+// current_epoch_start_height of the epoch
+// current_epoch_start_time defines the timestamp of the start of the epoch
+// duration of the epoch
+// epoch_counting_started reflects if the counting for the epoch has started
+// EpochInfo defines the message interface containing the relevant informations about
+// epochs is a slice of EpochInfo that defines the epochs in the genesis state
+// GenesisState defines the epochs module's genesis state.
+    (gogoproto.jsontag) = "duration,omitempty",
+    (gogoproto.moretags) = "yaml:\"current_epoch_start_time\""
+    (gogoproto.moretags) = "yaml:\"duration\""
+    (gogoproto.moretags) = "yaml:\"start_time\""
+    (gogoproto.nullable) = false,
+    (gogoproto.nullable) = false,
+    (gogoproto.nullable) = false,
+    (gogoproto.stdduration) = true,
+    (gogoproto.stdtime) = true,
+    (gogoproto.stdtime) = true,
+  google.protobuf.Duration duration = 3 [
+  google.protobuf.Timestamp current_epoch_start_time = 5 [
+  google.protobuf.Timestamp start_time = 2 [
+  // identifier of the epoch
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+  int64 current_epoch = 4;
+  int64 current_epoch_start_height = 7;
+message EpochInfo {
+  message GenesisState {
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/epochs/types";
+    package sacas.epochs.v1;
+    repeated EpochInfo epochs = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+    // start_time of the epoch
+    string identifier = 1;
+    syntax = "proto3";

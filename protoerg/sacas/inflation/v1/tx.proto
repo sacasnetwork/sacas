@@ -1,0 +1,31 @@
+
+}
+}
+// authority is the address of the governance account.
+// Copyright Tharsis Labs Ltd.(Sacas)
+import "amino/amino.proto";
+import "cosmos/msg/v1/msg.proto";
+import "cosmos_proto/cosmos.proto";
+import "gogoproto/gogo.proto";
+import "sacas/inflation/v1/genesis.proto";
+message MsgUpdateParams {
+  message MsgUpdateParamsResponse {}
+  // Msg defines the evm Msg service.
+  // MsgUpdateParams defines a Msg for updating the x/inflation module parameters.
+  // MsgUpdateParams message.
+  // MsgUpdateParamsResponse defines the response structure for executing a
+  // NOTE: All parameters must be supplied.
+  option (amino.name) = "sacas/x/inflation/MsgUpdateParams";
+  option (cosmos.msg.v1.service) = true;
+  option (cosmos.msg.v1.signer) = "authority";
+  option go_package = "github.com/sacasnetwork/sacas/v1/x/inflation/v1/types";
+  package sacas.inflation.v1;
+  // params defines the x/inflation parameters to update.
+  Params params = 2 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+  rpc UpdateParams(MsgUpdateParams) returns (MsgUpdateParamsResponse);
+  service Msg {
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+    string authority = 1 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+    syntax = "proto3";
+    // The authority is hard-coded to the Cosmos SDK x/gov module account
+    // UpdateParams defined a governance operation for updating the x/inflation module parameters.

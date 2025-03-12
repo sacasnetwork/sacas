@@ -1,0 +1,29 @@
+
+}
+}
+// active precompiles that are used to interact with Bank coins as ERC20s
+// active precompiles that are used to interact with native staking coins as ERC20s
+bool enable_erc20 = 1;
+// Copyright Tharsis Labs Ltd.(Sacas)
+// dynamic_precompiles defines the slice of hex addresses of the
+// enable_erc20 is the parameter to enable the conversion of Cosmos coins <--> ERC20 tokens.
+// enable_evm_hook is now depecrated
+// GenesisState defines the module's genesis state.
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "sacas/erc20/v1/erc20.proto";
+message GenesisState {
+  message Params {
+    // native_precompiles defines the slice of hex addresses of the
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+    package sacas.erc20.v1;
+    // params are the erc20 module parameters at genesis
+    // Params defines the erc20 module params
+    Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    repeated string dynamic_precompiles = 4;
+    repeated string native_precompiles = 3;
+    repeated TokenPair token_pairs = 2 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    reserved 2;
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+    syntax = "proto3";
+    // token_pairs is a slice of the registered token pairs at genesis

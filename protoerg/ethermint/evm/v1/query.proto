@@ -1,0 +1,518 @@
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+// account_address is the cosmos address of the account in bech32 format.
+// account_number is the account number
+// account_number is the account number
+// Account queries an Ethereum account.
+// Address.
+// address is the ethereum hex address to query the account for.
+// address is the ethereum hex address to query the account for.
+// address is the ethereum hex address to query the balance for.
+// address is the ethereum hex address to query the code for.
+// address is the ethereum hex address to query the storage state for.
+// args uses the same json format as the json rpc api.
+// balance is the balance of the EVM denomination.
+// balance is the balance of the EVM denomination.
+// Balance queries the balance of a the EVM denomination for a single
+// base_fee is the EIP1559 base fee
+// BaseFee queries the base fee of the parent block of the current block,
+// block_hash (hex) of the traced block
+// block_hash of requested transaction
+// block_max_gas of the block of the requested transaction
+// block_max_gas of the traced block
+// block_number of requested transaction
+// block_number of the traced block
+// block_time of requested transaction
+// block_time of the traced block
+bytes args = 1;
+bytes code = 1;
+bytes data = 1;
+bytes data = 1;
+bytes proposer_address = 3 [(gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.ConsAddress"];
+bytes proposer_address = 8 [(gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.ConsAddress"];
+bytes proposer_address = 8 [(gogoproto.casttype) = "github.com/cosmos/cosmos-sdk/types.ConsAddress"];
+bytes ret = 2;
+// chain_id is the eip155 chain id parsed from the requested block header
+// chain_id is the eip155 chain id parsed from the requested block header
+// chain_id is the eip155 chain id parsed from the requested block header
+// code_hash is the hex-formatted code bytes from the EOA.
+// Code queries the balance of all coins for a single account.
+// code represents the code bytes from an ethereum address.
+// cons_address is the validator cons address to query the account for.
+// Copyright Tharsis Labs Ltd.(Sacas)
+// CosmosAccount queries an Ethereum account's Cosmos Address.
+// cosmos_address is the cosmos address of the account.
+cosmos.base.query.v1beta1.PageRequest pagination = 2;
+cosmos.base.query.v1beta1.PageResponse pagination = 2;
+                                                                                               "cosmossdk.io/math.Int"];
+                                                                                               // data is the response
+                                                                                               // serialized in bytes
+                                                                                               // data is the response
+                                                                                               // serialized in bytes
+                                                                                               // `debug_traceBlockByHash`
+                                                                                               // rpc api trace_config
+                                                                                               // `debug_traceBlockByNumber`
+                                                                                               // and
+                                                                                               // EIP1559 base
+                                                                                               // QueryBaseFeeResponse
+                                                                                               // returns the EIP1559
+                                                                                               // base fee.
+                                                                                               // EstimateGas implements
+                                                                                               // the `eth_estimateGas`
+                                                                                               // rpc api
+                                                                                               // EstimateGasResponse
+                                                                                               // defines EstimateGas
+                                                                                               // response EthAccount.
+                                                                                               // EthCall implements the
+                                                                                               // `eth_call` rpc api
+                                                                                               // EthCallRequest defines
+                                                                                               // EthCall request
+                                                                                               // execution
+                                                                                               // fee.
+                                                                                               // from a validator
+                                                                                               // consensus value
+                                                                                               // defines the functions.
+                                                                                               // gas_cap defines the
+                                                                                               // default gas cap to be
+                                                                                               // used gas returns the
+                                                                                               // estimated gas given
+                                                                                               // key. vm_error is the
+                                                                                               // error returned by vm
+                                                                                               [(gogoproto.nullable) =
+                                                                                                    false,
+                                                                                                (amino.dont_omitempty) =
+                                                                                                    true];
+                                                                                               [(gogoproto.nullable) =
+                                                                                                    false,
+                                                                                                (amino.dont_omitempty) =
+                                                                                                    true,
+                                                                                                (gogoproto.stdtime) =
+                                                                                                    true];
+                                                                                               [(gogoproto.nullable) =
+                                                                                                    false,
+                                                                                                (amino.dont_omitempty) =
+                                                                                                    true,
+                                                                                                (gogoproto.stdtime) =
+                                                                                                    true];
+                                                                                               google.protobuf.Timestamp
+                                                                                                   block_time =
+                                                                                                   7 google.protobuf
+                                                                                                       .Timestamp
+                                                                                                           block_time =
+                                                                                                       7
+                                                                                                   // hash is the
+                                                                                                   // ethereum
+                                                                                                   // transaction hex
+                                                                                                   // hash to query the
+                                                                                                   // logs for. holds
+                                                                                                   // extra parameters
+                                                                                                   // to trace
+                                                                                                   // functions.
+                                                                                                   import
+                                                                                                   "amino/amino.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "ethermint/evm/v1/evm.proto";
+import "ethermint/evm/v1/tx.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+                                                                                               int64 block_max_gas = 10;
+                                                                                               int64 block_max_gas = 10;
+                                                                                               int64 block_number = 5;
+                                                                                               int64 block_number = 5;
+                                                                                               int64 chain_id = 4;
+                                                                                               int64 chain_id = 9;
+                                                                                               int64 chain_id = 9;
+                                                                                               // is an array of
+                                                                                               // messages in the block
+                                                                                               // it's similar to
+                                                                                               // feemarket module's
+                                                                                               // method, but also
+                                                                                               // checks london hardfork
+                                                                                               // status. key defines
+                                                                                               // the key of the storage
+                                                                                               // state logs represents
+                                                                                               // the ethereum logs
+                                                                                               // generated from the
+                                                                                               // given transaction.
+                                                                                               message
+                                                                                               EstimateGasResponse {
+                                                                                                 message
+                                                                                                 EthCallRequest {
+                                                                                                   message
+                                                                                                   QueryAccountRequest {
+                                                                                                     message
+                                                                                                     QueryAccountResponse {
+                                                                                                       message
+                                                                                                       QueryBalanceRequest {
+                                                                                                         message
+                                                                                                         QueryBalanceResponse {
+                                                                                                           message
+                                                                                                           QueryBaseFeeRequest {
+                                                                                                           }
+                                                                                                           message
+                                                                                                           QueryBaseFeeResponse {
+                                                                                                             message
+                                                                                                             QueryCodeRequest {
+                                                                                                               message
+                                                                                                               QueryCodeResponse {
+                                                                                                                 message
+                                                                                                                 QueryCosmosAccountRequest {
+                                                                                                                   message
+                                                                                                                   QueryCosmosAccountResponse {
+                                                                                                                     message
+                                                                                                                     QueryParamsRequest {
+                                                                                                                     }
+                                                                                                                     message
+                                                                                                                     QueryParamsResponse {
+                                                                                                                       message
+                                                                                                                       QueryStorageRequest {
+                                                                                                                         message
+                                                                                                                         QueryStorageResponse {
+                                                                                                                           message
+                                                                                                                           QueryTraceBlockRequest {
+                                                                                                                             message
+                                                                                                                             QueryTraceBlockResponse {
+                                                                                                                               message
+                                                                                                                               QueryTraceTxRequest {
+                                                                                                                                 message
+                                                                                                                                 QueryTraceTxResponse {
+                                                                                                                                   message
+                                                                                                                                   QueryTxLogsRequest {
+                                                                                                                                     message
+                                                                                                                                     QueryTxLogsResponse {
+                                                                                                                                       message
+                                                                                                                                       QueryValidatorAccountRequest {
+                                                                                                                                         message
+                                                                                                                                         QueryValidatorAccountResponse {
+                                                                                                                                           // method.
+                                                                                                                                           // method.
+                                                                                                                                           // method.
+                                                                                                                                           // method. QueryBalanceRequest is the request type for the Query/Balance RPC
+                                                                                                                                           // method. QueryBalanceResponse is the response type for the Query/Balance
+                                                                                                                                           MsgEthereumTx
+                                                                                                                                               msg =
+                                                                                                                                                   1;
+                                                                                                                                           // msg is the MsgEthereumTx for the requested transaction
+                                                                                                                                           // need to be replayed first to get correct context for tracing.
+                                                                                                                                           // nonce is the account's sequence number.
+                                                                                                                                           // opcode)
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .equal) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               gogoproto
+                                                                                                                                                   .goproto_getters) =
+                                                                                                                                               false;
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               option (
+                                                                                                                                                   google
+                                                                                                                                                       .api
+                                                                                                                                                       .http)
+                                                                                                                                                   .get =
+                                                                                                                                                   "/sacas/evm/v1/account/{address}";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/balances/{address}";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/base_fee";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/codes/{address}";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/cosmos_account/{address}";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/estimate_gas";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/eth_call";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/params";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/storage/{address}/{key}";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/trace_block";
+                                                                                                                                           option (
+                                                                                                                                               google
+                                                                                                                                                   .api
+                                                                                                                                                   .http)
+                                                                                                                                               .get =
+                                                                                                                                               "/sacas/evm/v1/trace_tx";
+                                                                                                                                           option go_package =
+                                                                                                                                               "github.com/sacasnetwork/sacas/v1/x/evm/types";
+                                                                                                                                           package ethermint
+                                                                                                                                               .evm
+                                                                                                                                               .v1;
+                                                                                                                                           // pagination defines an optional pagination for the request.
+                                                                                                                                           // pagination defines the pagination in the response.
+                                                                                                                                           // parameters. QueryParamsResponse defines the response type for querying
+                                                                                                                                           // params define the evm module parameters.
+                                                                                                                                           Params
+                                                                                                                                               params =
+                                                                                                                                                   1
+                                                                                                                                               // Params queries the parameters of x/evm module.
+                                                                                                                                               // predecessors is an array of transactions included in the same block
+                                                                                                                                               // proposer_address is the address of the requested block
+                                                                                                                                               // proposer_address is the proposer of the requested block
+                                                                                                                                               // proposer_address of the requested block in hex format
+                                                                                                                                               // QueryAccountRequest is the request type for the Query/Account RPC method.
+                                                                                                                                               // QueryAccountResponse is the response type for the Query/Account RPC
+                                                                                                                                               // QueryCodeRequest is the request type for the Query/Code RPC method.
+                                                                                                                                               // QueryCodeResponse is the response type for the Query/Code RPC
+                                                                                                                                               // Query/CosmosAccount Query defines the gRPC querier service.
+                                                                                                                                               // QueryCosmosAccountRequest is the request type for the Query/CosmosAccount
+                                                                                                                                               // QueryParamsRequest defines the request type for querying x/evm
+                                                                                                                                               // Query/Storage RPC method. QueryStorageResponse is the response type for
+                                                                                                                                               // QueryTraceBlockResponse defines TraceBlock response
+                                                                                                                                               // QueryTraceTxRequest defines TraceTx request
+                                                                                                                                               // QueryTraceTxResponse defines TraceTx response
+                                                                                                                                               // QueryTxLogsRequest is the request type for the Query/TxLogs RPC method.
+                                                                                                                                               // QueryTxLogsResponse is the response type for the Query/TxLogs RPC method.
+                                                                                                                                               // QueryValidatorAccountRequest is the request type for the
+                                                                                                                                               // QueryValidatorAccountResponse is the response type for the
+                                                                                                                                               // Query/ValidatorAccount RPC method.
+                                                                                                                                               // Query/ValidatorAccount RPC method.
+                                                                                                                                               repeated Log
+                                                                                                                                                   logs =
+                                                                                                                                                       1;
+                                                                                                                                           repeated MsgEthereumTx
+                                                                                                                                               predecessors =
+                                                                                                                                                   4;
+                                                                                                                                           repeated MsgEthereumTx
+                                                                                                                                               txs =
+                                                                                                                                                   1;
+                                                                                                                                           reserved 2;
+                                                                                                                                           reserved
+                                                                                                                                               "tx_index";
+                                                                                                                                           // ret is the returned data from evm function (result or data supplied with
+                                                                                                                                           returns (
+                                                                                                                                               QueryCosmosAccountResponse) {
+                                                                                                                                             returns (
+                                                                                                                                                 QueryStorageResponse) {
+                                                                                                                                               returns (
+                                                                                                                                                   QueryTraceBlockResponse) {
+                                                                                                                                                 returns (
+                                                                                                                                                     QueryTraceTxResponse) {
+                                                                                                                                                   returns (
+                                                                                                                                                       QueryValidatorAccountResponse) {
+                                                                                                                                                     // revert
+                                                                                                                                                     rpc
+                                                                                                                                                     Account(
+                                                                                                                                                         QueryAccountRequest)
+                                                                                                                                                         returns (
+                                                                                                                                                             QueryAccountResponse) {
+                                                                                                                                                       // rpc api tx_index is not necessary anymore txs
+                                                                                                                                                       rpc
+                                                                                                                                                       Balance(
+                                                                                                                                                           QueryBalanceRequest)
+                                                                                                                                                           returns (
+                                                                                                                                                               QueryBalanceResponse) {
+                                                                                                                                                         rpc
+                                                                                                                                                         BaseFee(
+                                                                                                                                                             QueryBaseFeeRequest)
+                                                                                                                                                             returns (
+                                                                                                                                                                 QueryBaseFeeResponse) {
+                                                                                                                                                           rpc
+                                                                                                                                                           Code(
+                                                                                                                                                               QueryCodeRequest)
+                                                                                                                                                               returns (
+                                                                                                                                                                   QueryCodeResponse) {
+                                                                                                                                                             rpc
+                                                                                                                                                             CosmosAccount(
+                                                                                                                                                                 QueryCosmosAccountRequest)
+                                                                                                                                                                 rpc EstimateGas(
+                                                                                                                                                                     EthCallRequest)
+                                                                                                                                                                     returns (
+                                                                                                                                                                         EstimateGasResponse) {
+                                                                                                                                                               rpc
+                                                                                                                                                               EthCall(
+                                                                                                                                                                   EthCallRequest)
+                                                                                                                                                                   returns (
+                                                                                                                                                                       MsgEthereumTxResponse) {
+                                                                                                                                                                 // RPC method.
+                                                                                                                                                                 // RPC method. QueryBaseFeeRequest defines the request type for querying the
+                                                                                                                                                                 rpc
+                                                                                                                                                                 Params(
+                                                                                                                                                                     QueryParamsRequest)
+                                                                                                                                                                     returns (
+                                                                                                                                                                         QueryParamsResponse) {
+                                                                                                                                                                   // RPC QueryCosmosAccountResponse is the response type for the
+                                                                                                                                                                   rpc Storage(
+                                                                                                                                                                       QueryStorageRequest)
+                                                                                                                                                                       rpc TraceBlock(
+                                                                                                                                                                           QueryTraceBlockRequest)
+                                                                                                                                                                           rpc TraceTx(
+                                                                                                                                                                               QueryTraceTxRequest)
+                                                                                                                                                                               rpc ValidatorAccount(
+                                                                                                                                                                                   QueryValidatorAccountRequest) "/sacas/evm/v1/validator_account/{cons_address}";
+                                                                                                                                                                   // sequence is the account's sequence number.
+                                                                                                                                                                   // sequence is the account's sequence number.
+                                                                                                                                                                   service
+                                                                                                                                                                   Query {
+                                                                                                                                                                     // single account.
+                                                                                                                                                                     // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+                                                                                                                                                                     // Storage queries the balance of all coins for a
+                                                                                                                                                                     // storage state value hash associated with the
+                                                                                                                                                                     string account_address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string address =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string balance =
+                                                                                                                                                                         1;
+                                                                                                                                                                     string balance =
+                                                                                                                                                                         1;
+                                                                      string base_fee = 1 [(gogoproto.customtype) =
+                                                                      string block_hash = 6;
+                                                                      string block_hash = 6;
+                                                                      string code_hash = 2;
+                                                                      string cons_address = 1;
+                                                                      string cosmos_address = 1;
+                                                                      string hash = 1;
+                                                                      string key = 2;
+                                                                      string value = 1;
+                                                                      string vm_error = 3;
+                                                                      syntax = "proto3";
+                                            // the Query/Storage RPC QueryTraceBlockRequest defines TraceTx request
+                                                                      // TraceBlock implements the
+                                                                      // trace_config holds extra parameters to trace
+                                                                      TraceConfig trace_config = 3;
+                                                                      TraceConfig trace_config = 3;
+                                                                      // TraceTx implements the `debug_traceTransaction`
+                                                                      uint64 account_number = 3;
+                                                                      uint64 account_number = 3;
+                                                                      uint64 gas = 1;
+                                                                      uint64 gas_cap = 2;
+                                                                      uint64 nonce = 3;
+                                                                      uint64 sequence = 2;
+                                                                      uint64 sequence = 2;
+                                                                      // ValidatorAccount queries an Ethereum account's
+                                                                      // x/evm parameters. QueryStorageRequest is the
+                                                                      // request type for the

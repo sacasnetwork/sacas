@@ -1,0 +1,48 @@
+
+}
+}
+}
+}
+}
+}
+}
+// base_fee is the EIP1559 base fee
+// BaseFee queries the base fee of the parent block of the current block.
+// BlockGas queries the gas used at a given block height
+// Copyright Tharsis Labs Ltd.(Sacas)
+// fee.
+// fee.
+// gas is the returned block gas
+import "amino/amino.proto";
+import "ethermint/feemarket/v1/feemarket.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+int64 gas = 1;
+message QueryBaseFeeRequest {}
+message QueryBaseFeeResponse {
+  message QueryBlockGasRequest {}
+  message QueryBlockGasResponse {
+    message QueryParamsRequest {}
+    message QueryParamsResponse {
+      option (google.api.http).get = "/sacas/feemarket/v1/base_fee";
+      option (google.api.http).get = "/sacas/feemarket/v1/block_gas";
+      option (google.api.http).get = "/sacas/feemarket/v1/params";
+      option go_package = "github.com/sacasnetwork/sacas/v1/x/feemarket/types";
+      package ethermint.feemarket.v1;
+      // params define the evm module parameters.
+      Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+      // Params queries the parameters of x/feemarket module.
+      // QueryBaseFeeRequest defines the request type for querying the EIP1559 base
+      // QueryBaseFeeResponse returns the EIP1559 base fee.
+      // QueryBlockGasRequest defines the request type for querying the EIP1559 base
+      // QueryBlockGasResponse returns block gas used for a given height.
+      // Query defines the gRPC querier service.
+      // QueryParamsRequest defines the request type for querying x/evm parameters.
+      // QueryParamsResponse defines the response type for querying x/evm parameters.
+      rpc BaseFee(QueryBaseFeeRequest) returns (QueryBaseFeeResponse) {
+        rpc BlockGas(QueryBlockGasRequest) returns (QueryBlockGasResponse) {
+          rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+            service Query {
+              // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+              string base_fee = 1 [(gogoproto.customtype) = "cosmossdk.io/math.Int"];
+              syntax = "proto3";

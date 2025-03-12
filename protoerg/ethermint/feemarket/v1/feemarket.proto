@@ -1,0 +1,39 @@
+
+
+  ];
+  ];
+  }
+  (amino.dont_omitempty) = true(amino.dont_omitempty) = true
+      // base_fee_change_denominator bounds the amount the base fee can change
+      // base_fee for EIP-1559 blocks.
+      // between blocks.
+      bool no_base_fee = 1;
+  // Copyright Tharsis Labs Ltd.(Sacas)
+  // DEPRECATED: initial base fee for EIP-1559 blocks.
+  // elasticity_multiplier bounds the maximum gas limit an EIP-1559 block may
+  // enable_height defines at which block height the base fee calculation is enabled.
+  [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+  (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec", (gogoproto.customtype) = "cosmossdk.io/math.LegacyDec",
+  (gogoproto.nullable) = false, (gogoproto.nullable) = false,
+  // have.
+      import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+  int64 enable_height = 5;
+  message Params {
+    // min_gas_multiplier bounds the minimum gas used to be charged
+    // min_gas_price defines the minimum gas price value for cosmos and eth transactions
+    // no_base_fee forces the EIP-1559 base fee to 0 (needed for 0 price calls)
+    option (amino.name) = "sacas/x/feemarket/Params";
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/feemarket/types";
+    package ethermint.feemarket.v1;
+    // Params defines the EVM module parameters
+    reserved 4;
+    reserved "initial_base_fee";
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  string base_fee = 6
+  string min_gas_multiplier = 8 [
+  string min_gas_price = 7 [
+syntax = "proto3";
+  // to senders based on gas limit
+  uint32 base_fee_change_denominator = 2;
+  uint32 elasticity_multiplier = 3;

@@ -1,0 +1,18 @@
+
+}
+}
+// amount of gas wanted by the block
+// base_fee for EIP-1559 blocks
+// Copyright Tharsis Labs Ltd.(Sacas)
+// EventBlockGas defines an Ethereum block gas event
+// EventFeeMarket is the event type for the fee market module
+// height of the block
+message EventBlockGas {
+  message EventFeeMarket {
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/feemarket/types";
+    package ethermint.feemarket.v1;
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+    string amount = 2;
+    string base_fee = 1;
+    string height = 1;
+    syntax = "proto3";

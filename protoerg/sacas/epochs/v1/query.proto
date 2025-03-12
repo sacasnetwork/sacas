@@ -1,0 +1,40 @@
+// Copyright Tharsis Labs Ltd.(Sacas)
+cosmos.base.query.v1beta1.PageRequest pagination = 1;
+cosmos.base.query.v1beta1.PageResponse pagination = 2;
+// current_epoch is the number of the current epoch
+// CurrentEpoch provide current epoch of specified identifier
+// EpochInfos provide running epochInfos
+// epochs is a slice of all EpochInfos
+// identifier of the current epoch
+import "amino/amino.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "sacas/epochs/v1/genesis.proto";
+int64 current_epoch = 1;
+message QueryCurrentEpochRequest {
+  message QueryCurrentEpochResponse {
+    message QueryEpochsInfoRequest {
+      message QueryEpochsInfoResponse {
+        // method.
+        // method.
+        // method.
+        // method.
+        option (google.api.http).get = "/sacas/epochs/v1/current_epoch";
+        option (google.api.http).get = "/sacas/epochs/v1/epochs";
+        option go_package = "github.com/sacasnetwork/sacas/v1/x/epochs/types";
+        package sacas.epochs.v1;
+        // pagination defines an optional pagination for the request.
+        // pagination defines an optional pagination for the request.
+        // QueryCurrentEpochRequest is the request type for the Query/EpochInfos RPC
+        // QueryCurrentEpochResponse is the response type for the Query/EpochInfos RPC
+        // Query defines the gRPC querier service.
+        // QueryEpochsInfoRequest is the request type for the Query/EpochInfos RPC
+        // QueryEpochsInfoResponse is the response type for the Query/EpochInfos RPC
+        repeated EpochInfo epochs = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+        rpc CurrentEpoch(QueryCurrentEpochRequest) returns (QueryCurrentEpochResponse) {
+          rpc EpochInfos(QueryEpochsInfoRequest) returns (QueryEpochsInfoResponse) {
+            service Query {
+              // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+              string identifier = 1;
+              syntax = "proto3";

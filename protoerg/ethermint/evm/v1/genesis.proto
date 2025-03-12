@@ -1,0 +1,28 @@
+
+}
+}
+// accounts is an array containing the ethereum genesis accounts.
+// address defines an ethereum hex formated address of an account
+// code defines the hex bytes of the account code.
+// Copyright Tharsis Labs Ltd.(Sacas)
+// custom storage type and that it doesn't contain the private key field.
+// GenesisAccount defines an account to be initialized in the genesis state.
+// GenesisState defines the evm module's genesis state.
+[(gogoproto.nullable) = false, (amino.dont_omitempty) = true, (gogoproto.castrepeated) = "Storage"];
+import "amino/amino.proto";
+import "ethermint/evm/v1/evm.proto";
+import "gogoproto/gogo.proto";
+// Its main difference between with Geth's GenesisAccount is that it uses a
+message GenesisAccount {
+  message GenesisState {
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/evm/types";
+    package ethermint.evm.v1;
+    // params defines all the parameters of the module.
+    Params params = 2 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    repeated GenesisAccount accounts = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    repeated State storage = 3
+        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+        // storage defines the set of state key values for the account.
+        string address = 1;
+    string code = 2;
+    syntax = "proto3";

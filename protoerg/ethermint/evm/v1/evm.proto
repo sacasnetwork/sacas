@@ -1,0 +1,236 @@
+
+
+//
+  ];
+  ];
+  ];
+  ];
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  9 string contract_address = 1 [(gogoproto.moretags) = "yaml:\"contract_address\""];
+  AccessControl access_control = 9 [(gogoproto.customname) = "AccessControl", (gogoproto.nullable) = false];
+  // access_control defines the permission policy of the EVM
+  // AccessControl defines the permission policy of the EVM
+  // access_control_list defines defines different things depending on the AccessType:
+  AccessControlType call = 2 [(gogoproto.nullable) = false];
+  AccessControlType create = 1 [(gogoproto.nullable) = false];
+  // AccessControlType defines the permission type for policies
+  // AccessTuple is the element type of an access list.
+  AccessType access_type = 1 [(gogoproto.customname) = "AccessType", (gogoproto.moretags) = "yaml:\"access_type\""];
+  // AccessType defines the types of permissions for the operations
+  // access_type defines which type of permission is required for the operation
+  ACCESS_TYPE_PERMISSIONED = 2 [(gogoproto.enumvalue_customname) = "AccessTypePermissioned"];
+  // - ACCESS_TYPE_PERMISSIONED: list of addresses that are allowed to perform the operation
+  // ACCESS_TYPE_PERMISSIONED only allows the operation for specific addresses
+  ACCESS_TYPE_PERMISSIONLESS = 0 [(gogoproto.enumvalue_customname) = "AccessTypePermissionless"];
+  // ACCESS_TYPE_PERMISSIONLESS does not restrict the operation to anyone
+  // - ACCESS_TYPE_PERMISSIONLESS: list of addresses that are blocked from performing the operation
+  ACCESS_TYPE_RESTRICTED = 1 [(gogoproto.enumvalue_customname) = "AccessTypeRestricted"];
+  // - ACCESS_TYPE_RESTRICTED: ignored
+  // ACCESS_TYPE_RESTRICTED restrict the operation to anyone
+  // active_static_precompiles defines the slice of hex addresses of the precompiled
+  // address is a hex formatted ethereum address
+  // address of the contract that generated the event
+  // allow_unprotected_txs defines if replay-protected (i.e non EIP155
+  // any). If the state transition is an evm.Call, the contract address will be
+  // are derived, i.e. filled in by the nodes, but not secured by consensus.
+  // arrow_glacier_block: Eip-4345 (bomb delay) switch block (nil = no fork, 0 = already activated)
+  // berlin_block: Berlin switch block (nil = no fork, 0 = already on berlin)
+  // block_hash of the block in which the transaction was included
+  // block_number of the block in which the transaction was included
+  // bloom represents the bloom filter bytes
+  bool allow_unprotected_txs = 6;
+  bool dao_fork_support = 3 bool debug = 8;
+  bool disable_stack = 5 [(gogoproto.jsontag) = "disableStack"];
+  bool disable_storage = 6 [(gogoproto.jsontag) = "disableStorage"];
+  bool enable_memory = 11 [(gogoproto.jsontag) = "enableMemory"];
+  bool enable_return_data = 12 [(gogoproto.jsontag) = "enableReturnData"];
+  bool removed = 9;
+  bool reverted = 5;
+  bytes bloom = 2;
+  bytes data = 3;
+  bytes ret = 4;
+  // byzantium_block: Byzantium switch block (nil no fork, 0 = already on byzantium)
+  // call defines the permission policy for calling contracts
+  // calls
+  // cancun_block switch block (nil = no fork, 0 = already on cancun)
+  ChainConfig chain_config = 5
+      // ChainConfig defines the Ethereum ChainConfig parameters using *sdk.Int values
+      // chain_config defines the EVM chain configuration parameters
+      ChainConfig overrides = 10;
+  // constantinople_block: Constantinople switch block (nil no fork, 0 = already activated)
+  // contract_address contains the ethereum address of the created contract (if
+  // contracts that are active
+  // Copyright Tharsis Labs Ltd.(Sacas)
+  // create defines the permission policy for creating contracts
+  // dao_fork_block corresponds to TheDAO hard-fork switch block (nil no fork)
+  // dao_fork_support defines whether the nodes supports or opposes the DAO hard-fork
+  // data which is supplied by the contract, usually ABI-encoded
+  // debug can be used to print output during capture end
+  // DEPRECATED: DisableMemory and DisableReturnData have been renamed to
+  // DEPRECATED: EWASM, YOLOV3 and Catalyst block have been deprecated
+  // DEPRECATED: merge fork block was deprecated: https://github.com/ethereum/go-ethereum/pull/24904
+  // disable_stack switches stack capture
+  // disable_storage switches storage capture
+  // eip150_block: EIP150 implements the Gas price changes
+  // eip150_hash: EIP150 HF hash (needed for header only clients as only gas pricing changed)
+  // eip155_block: EIP155Block HF block
+  // eip158_block: EIP158 HF block
+  // empty.
+  // Enable*.
+  // enable_create and enable call have been deprecated
+  // enable_memory switches memory capture
+  // enable_return_data switches the capture of return data
+  enum AccessType {
+    // evm_channels is the list of channel identifiers from EVM compatible chains
+    // evm_denom represents the token denomination used to run the EVM state
+    // extra_eips defines the additional EIPs for the vm.Config
+    // for creating and calling contracts
+    // gas_used notes the amount of gas consumed while execution
+    [(gogoproto.customname) = "AccessControlList", (gogoproto.moretags) = "yaml:\"access_control_list\""];
+    (gogoproto.customname) = "DAOForkBlock",
+    [(gogoproto.customname) = "DAOForkSupport", (gogoproto.moretags) = "yaml:\"dao_fork_support\""];
+    (gogoproto.customname) = "EIP150Block", (gogoproto.customname) = "EIP155Block",
+    (gogoproto.customname) = "EIP158Block", (gogoproto.customtype) = "cosmossdk.io/math.Int",
+    [(gogoproto.customname) = "ExtraEIPs", (gogoproto.moretags) = "yaml:\"extra_eips\""];
+    (gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.customtype) = "cosmossdk.io/math.Int",
+    (gogoproto.customtype) = "cosmossdk.io/math.Int",
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"arrow_glacier_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"berlin_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"byzantium_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"cancun_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"constantinople_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"gray_glacier_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"homestead_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"istanbul_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"london_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"merge_netsplit_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"muir_glacier_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"petersburg_block\""];
+    [(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.moretags) = "yaml:\"shanghai_block\""];
+    [(gogoproto.jsontag) = "blockHash"];
+    [(gogoproto.moretags) = "yaml:\"chain_config\"", (gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    (gogoproto.moretags) = "yaml:\"dao_fork_block\""(gogoproto.moretags) = "yaml:\"eip150_block\""(gogoproto.moretags) =
+        [(gogoproto.moretags) = "yaml:\"tx_logs\"", (gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    // gray_glacier_block: EIP-5133 (bomb delay) switch block (nil = no fork, 0 = already activated)
+    // hash of the transaction
+    // homestead_block switch (nil no fork, 0 = already homestead)
+    // (https://github.com/ethereum/EIPs/issues/150) EIP150 HF block (nil no fork)
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+    // index of the log in the block
+    // instead of *big.Int.
+    int32 limit = 9;
+    // istanbul_block: Istanbul switch block (nil no fork, 0 = already on istanbul)
+    // key is the stored key
+    // limit defines the maximum length of output, but zero means unlimited
+    // log event. These events are generated by the LOG opcode and stored/indexed by
+    // Log represents an protobuf compatible Ethereum Log that defines a contract
+    // logs.
+    // logs is an array of Logs for the given transaction hash
+    // london_block: London switch block (nil = no fork, 0 = already on london)
+    // merge_netsplit_block: Virtual fork after The Merge to use as a network splitter
+    message AccessControl {
+      message AccessControlType {
+        message AccessTuple {
+          message ChainConfig {
+            message Log {
+              message Params {
+                message State {
+                  message TraceConfig {
+                    message TransactionLogs {
+                      message TxResult {
+                        // muir_glacier_block: Eip-2384 (bomb delay) switch block (nil no fork, 0 = already activated)
+                        // NOTE: address, topics and data are consensus fields. The rest of the fields
+                        option (amino.name) = "sacas/x/evm/Params";
+                        option (gogoproto.goproto_enum_prefix) = false;
+                        option (gogoproto.goproto_getters) = false;
+                        option (gogoproto.goproto_getters) = false;
+                        option go_package = "github.com/sacasnetwork/sacas/v1/x/evm/types";
+                        // overrides can be used to execute a trace using future fork rules
+                        package ethermint.evm.v1;
+                        // Params defines the EVM module parameters
+                        // persisted on blockchain state after an upgrade.
+                        // petersburg_block: Petersburg switch block (nil same as Constantinople)
+                        // reexec defines the number of blocks the tracer is willing to go back
+                        // removed is true if this log was reverted due to a chain
+                        // renamed active_precompiles to active_static_precompiles
+                        // reorganisation. You must pay attention to this field if you receive logs
+                        repeated Log logs = 2;
+                        repeated string access_control_list = 2 repeated string active_static_precompiles = 10;
+                        repeated string evm_channels = 8 [(gogoproto.customname) = "EVMChannels"];
+                        repeated string extra_eips = 4 repeated string storage_keys = 2
+                            [(gogoproto.jsontag) = "storageKeys"];
+                        repeated string topics = 2;
+                        reserved 14, 15, 16;
+                        reserved 19;
+                        reserved 2, 3;
+                        reserved 4, 7;
+                        reserved 7;
+                        reserved "disable_memory", "disable_return_data";
+                        reserved "merge_fork_block";
+                        reserved "yolo_v3_block", "ewasm_block", "catalyst_block";
+                        // ret defines the bytes from the execution.
+                        // reverted flag is set to true when the call has been reverted
+                        // shanghai_block switch block (nil = no fork, 0 = already on shanghai)
+                        // signed) transactions can be executed on the state machine.
+                        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+                        // State represents a single Storage key value pair item.
+                        // storage_keys are hex formatted hashes of the storage keys
+                        string address = 1;
+                        string address = 1;
+                        string arrow_glacier_block = 18 string berlin_block = 13 string block_hash = 7
+                        string byzantium_block = 8 string cancun_block = 23 string constantinople_block =
+  string dao_fork_block = 2 [
+  string eip150_block = 4 [
+  string eip150_hash = 5 [(gogoproto.customname) = "EIP150Hash", (gogoproto.moretags) = "yaml:\"byzantium_block\""];
+  string eip155_block = 6 [
+  string eip158_block = 7 [
+  string evm_denom = 1 [(gogoproto.moretags) = "yaml:\"evm_denom\""];
+  string gray_glacier_block = 20
+  string hash = 1;
+  string homestead_block = 1
+  string istanbul_block = 11
+  string key = 1;
+  string london_block = 17
+  string merge_netsplit_block = 21
+  string muir_glacier_block = 12
+  string petersburg_block = 10
+  string shanghai_block = 22
+  string timeout = 2;
+  string tracer = 1;
+  string tracer_json_config = 13 [(gogoproto.jsontag) = "tracerConfig"];
+  string tx_hash = 5 [(gogoproto.jsontag) = "transactionHash"];
+  string value = 2;
+syntax = "proto3";
+// the node.
+  // through a filter query.
+  // timeout overrides the default timeout of 5 seconds for JavaScript-based tracing
+  // topics is a list of topics provided by the contract.
+// TraceConfig holds extra parameters to trace functions.
+  // tracer is a custom javascript tracer
+  // tracer_json_config configures the tracer using a JSON string
+// TransactionLogs define the logs generated from a transaction execution
+  TransactionLogs tx_logs = 3
+  // transitions.
+  // tx_hash is the transaction hash
+  // tx_index of the transaction in the block
+  // tx_logs contains the transaction hash and the proto-compatible ethereum
+// TxResult stores results of Tx execution.
+  uint64 block_number = 4 [(gogoproto.jsontag) = "blockNumber"];
+  uint64 gas_used = 6;
+  uint64 index = 8 [(gogoproto.jsontag) = "logIndex"];
+  uint64 reexec = 3;
+  uint64 tx_index = 6 [(gogoproto.jsontag) = "transactionIndex"];
+  // value is the stored value for the given key
+  // with a given hash. It it used for import/export data as transactions are not
+        "yaml:\"eip155_block\""(gogoproto.moretags) = "yaml:\"eip158_block\""

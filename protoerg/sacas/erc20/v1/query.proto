@@ -1,0 +1,61 @@
+
+}
+}
+}
+}
+}
+}
+}
+}
+}
+// Copyright Tharsis Labs Ltd.(Sacas)
+// Cosmos base denomination
+cosmos.base.query.v1beta1.PageRequest pagination = 1;
+cosmos.base.query.v1beta1.PageResponse pagination = 2;
+import "amino/amino.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "sacas/erc20/v1/erc20.proto";
+import "sacas/erc20/v1/genesis.proto";
+message QueryParamsRequest {}
+message QueryParamsResponse {
+  message QueryTokenPairRequest {
+    message QueryTokenPairResponse {
+      message QueryTokenPairsRequest {
+        message QueryTokenPairsResponse {
+          // method.
+          // method.
+          // method.
+          // method.
+          option (google.api.http).get = "/sacas/erc20/v1/params";
+          option (google.api.http).get = "/sacas/erc20/v1/token_pairs";
+          option (google.api.http).get = "/sacas/erc20/v1/token_pairs/{token}";
+          option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+          package sacas.erc20.v1;
+          // pagination defines an optional pagination for the request.
+          // pagination defines the pagination in the response.
+          // params are the erc20 module parameters
+          Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+          // Params retrieves the erc20 module params
+          // Query defines the gRPC querier service.
+          // QueryParamsRequest is the request type for the Query/Params RPC method.
+          // QueryParamsResponse is the response type for the Query/Params RPC
+          // QueryTokenPairRequest is the request type for the Query/TokenPair RPC method.
+          // QueryTokenPairResponse is the response type for the Query/TokenPair RPC
+          // QueryTokenPairsRequest is the request type for the Query/TokenPairs RPC
+          // QueryTokenPairsResponse is the response type for the Query/TokenPairs RPC
+          repeated TokenPair token_pairs = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+          rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+            rpc TokenPair(QueryTokenPairRequest) returns (QueryTokenPairResponse) {
+              rpc TokenPairs(QueryTokenPairsRequest) returns (QueryTokenPairsResponse) {
+                service Query {
+                  // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+                  string token = 1;
+                  syntax = "proto3";
+                  // token identifier can be either the hex contract address of the ERC20 or the
+                  // TokenPair retrieves a registered token pair
+                  // token_pairs is a slice of registered token pairs for the erc20 module
+                  // TokenPairs retrieves registered token pairs
+                  // token_pairs returns the info about a registered token pair for the erc20 module
+                  TokenPair token_pair = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];

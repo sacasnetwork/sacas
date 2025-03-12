@@ -1,0 +1,28 @@
+
+}
+// aka. the transaction list returned by eth_getBlock api.
+bool failed = 5;
+// Copyright Tharsis Labs Ltd.(Sacas)
+// cumulative_gas_used specifies the cumulated amount of gas used for all
+// eth_tx_index is the index in the list of valid eth tx in the block,
+// failed is true if the eth transaction did not go succeed
+// gas_used by the transaction. If it exceeds the block gas limit,
+// height of the blockchain
+import "gogoproto/gogo.proto";
+int32 eth_tx_index = 4;
+int64 height = 1;
+// it's set to gas limit, which is what's actually deducted by ante handler.
+message TxResult {
+  // msg_index in a batch transaction
+  option (gogoproto.goproto_getters) = false;
+  option go_package = "github.com/sacasnetwork/sacas/v1/types";
+  package ethermint.types.v1;
+  // processed messages within the current batch transaction.
+  // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  syntax = "proto3";
+  // tx_index of the cosmos transaction
+  // TxResult is the value stored in eth tx indexer
+  uint32 msg_index = 3;
+  uint32 tx_index = 2;
+  uint64 cumulative_gas_used = 7;
+  uint64 gas_used = 6;

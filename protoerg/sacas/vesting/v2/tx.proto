@@ -1,0 +1,129 @@
+
+
+  ];
+  ];
+  ];
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  }
+  // according to the vesting and lockup schedules.
+  // account_address is the address of the ClawbackVestingAccount to claw back
+  (amino.dont_omitempty) = true(amino.dont_omitempty) = true, (amino.dont_omitempty) = true,
+  bool enable_gov_clawback = 3;
+  // Clawback removes the unvested tokens from a ClawbackVestingAccount.
+  // ClawbackVestingAccount.
+  // ClawbackVestingAccount.
+  // ClawbackVestingAccount.
+  // ClawbackVestingAccount.
+  // coins is the slice of clawed back coins
+  // ConvertVestingAccount converts a ClawbackVestingAccount to an Eth account
+  // Copyright Tharsis Labs Ltd.(Sacas)
+  // CreateClawbackVestingAccount creats a vesting account that is subject to clawback.
+  // dest_address specifies where the clawed-back tokens should be transferred
+  // enable_gov_clawback specifies whether the governance module can clawback this account
+  // from.
+  // funder_address is the address which funded the account
+  // funder_address is the current funder address of the ClawbackVestingAccount
+  // funder_address specifies the account that funds the vesting account
+  // funder_address specifies the account that will be able to fund the vesting account
+  // FundVestingAccount funds an existing ClawbackVestingAccount with tokens
+  "github.com/cosmos/cosmos-sdk/x/auth/vesting/types.Periods"(gogoproto.nullable) = false,
+  (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+  (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/x/auth/vesting/types.Periods"(gogoproto.castrepeated) =
+      (gogoproto.nullable) = false,
+  (gogoproto.nullable) = false,
+  [(gogoproto.stdtime) = true, (gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+  google.protobuf.Timestamp start_time = 3 import "amino/amino.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "cosmos/msg/v1/msg.proto";
+import "cosmos/vesting/v1beta1/vesting.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "google/protobuf/timestamp.proto";
+  // lockup_periods defines the unlocking schedule relative to the start_time
+  message MsgClawback {
+    message MsgClawbackResponse {
+      message MsgConvertVestingAccount {
+        message MsgConvertVestingAccountResponse {}
+        message MsgCreateClawbackVestingAccount {
+          message MsgCreateClawbackVestingAccountResponse {}
+          message MsgFundVestingAccount {
+            message MsgFundVestingAccountResponse {}
+            message MsgUpdateVestingFunder {
+              message MsgUpdateVestingFunderResponse {}
+              // MsgClawback defines a message that removes unvested tokens from a
+              // MsgClawbackResponse defines the MsgClawback response type.
+              // MsgConvertVestingAccount defines a message that enables converting a vesting account to an eth account
+              // MsgConvertVestingAccountResponse defines the MsgConvertVestingAccount response type.
+              // MsgCreateClawbackVestingAccount defines a message that enables creating a
+              // MsgCreateClawbackVestingAccountResponse defines the
+              // MsgCreateClawbackVestingAccount response type.
+              // Msg defines the vesting Msg service.
+              // MsgFundVestingAccount defines a message that enables funding an existing clawback
+              // MsgFundVestingAccountResponse defines the
+              // MsgFundVestingAccount response type.
+              // MsgUpdateVestingFunder defines a message that updates the funder account of a
+              // MsgUpdateVestingFunderResponse defines the MsgUpdateVestingFunder response
+              // new_funder_address is the new address to replace the existing funder_address
+              option (amino.name) = "sacas/MsgClawback";
+              option (amino.name) = "sacas/MsgConvertVestingAccount";
+              option (amino.name) = "sacas/MsgCreateClawbackVestingAccount";
+              option (amino.name) = "sacas/MsgFundVestingAccount";
+              option (amino.name) = "sacas/MsgUpdateVestingFunder";
+              option (cosmos.msg.v1.service) = true;
+              option (cosmos.msg.v1.signer) = "funder_address";
+              option (cosmos.msg.v1.signer) = "funder_address";
+              option (cosmos.msg.v1.signer) = "funder_address";
+              option (cosmos.msg.v1.signer) = "vesting_address";
+              option (cosmos.msg.v1.signer) = "vesting_address";
+              option (gogoproto.equal) = false;
+              option (google.api.http).get = "/sacas/vesting/v2/tx/clawback";
+              option (google.api.http).get = "/sacas/vesting/v2/tx/convert_vesting_account";
+              option (google.api.http).get = "/sacas/vesting/v2/tx/create_clawback_vesting_account";
+              option (google.api.http).get = "/sacas/vesting/v2/tx/fund_vesting_account";
+              option (google.api.http).get = "/sacas/vesting/v2/tx/update_vesting_funder";
+              option go_package = "github.com/sacasnetwork/sacas/v1/x/vesting/types";
+              package sacas.vesting.v2;
+  repeated cosmos.base.v1beta1.Coin coins = 1 [
+  repeated cosmos.vesting.v1beta1.Period lockup_periods = 4 [
+  repeated cosmos.vesting.v1beta1.Period vesting_periods = 5 [
+                    returns (MsgCreateClawbackVestingAccountResponse) {
+              rpc Clawback(MsgClawback) returns (MsgClawbackResponse) {
+                rpc ConvertVestingAccount(MsgConvertVestingAccount) returns (MsgConvertVestingAccountResponse) {
+                  rpc CreateClawbackVestingAccount(MsgCreateClawbackVestingAccount)
+                      rpc FundVestingAccount(MsgFundVestingAccount) returns (MsgFundVestingAccountResponse) {
+                    rpc UpdateVestingFunder(MsgUpdateVestingFunder) returns (MsgUpdateVestingFunderResponse) {
+                      service Msg {
+                        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+                        // start_time defines the time at which the vesting period begins
+                        string account_address = 2;
+                        string dest_address = 3;
+                        string funder_address = 1;
+                        string funder_address = 1;
+                        string funder_address = 1;
+                        string funder_address = 1;
+                        string new_funder_address = 2;
+                        string vesting_address = 1;
+                        string vesting_address = 2;
+                        string vesting_address = 2;
+                        string vesting_address = 3;
+                        syntax = "proto3";
+                        // the account.
+                        // to. If empty, the tokens will be transferred back to the original funder of
+                        // type.
+                        // UpdateVestingFunder updates the funder address of an existing
+                        // vesting account.
+                        // vesting_address is the address of the ClawbackVestingAccount being updated
+                        // vesting_address is the address of the vesting account to convert
+                        // vesting_address specifies the account that receives the funds
+                        // vesting_address specifies the address that will receive the vesting tokens
+                        // vesting_periods defines the vesting schedule relative to the start_time

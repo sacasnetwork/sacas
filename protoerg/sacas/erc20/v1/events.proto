@@ -1,0 +1,46 @@
+
+}
+}
+}
+}
+// amount is the amount of coins to be converted.
+// amount is the amount of coins to be converted.
+// contract_address of an ERC20 token contract, that is registered in a token pair
+// Copyright Tharsis Labs Ltd.(Sacas)
+// denom is the coin's denomination.
+// denom is the coin's denomination.
+// denom is the coin's denomination.
+// denom is the coin's denomination.
+// erc20_address is the ERC20 contract address.
+// erc20_address is the ERC20 contract address.
+// erc20_address is the ERC20 contract address.
+// EventConvertCoin is an event emitted when a coin is converted.
+// EventConvertERC20 is an event emitted when an ERC20 is converted.
+// EventRegisterPair is an event emitted when a coin is registered.
+// EventToggleTokenConversion is an event emitted when a coin's token conversion is toggled.
+message EventConvertCoin {
+  message EventConvertERC20 {
+    message EventRegisterPair {
+      message EventToggleTokenConversion {
+        option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+        package sacas.erc20.v1;
+        // receiver is the receiver's address.
+        // receiver is the receiver's address.
+        // sender is the sender's address.
+        // sender is the sender's address.
+        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+        string amount = 3;
+        string amount = 3;
+        string contract_address = 5;
+        string denom = 1;
+        string denom = 1;
+        string denom = 4;
+        string denom = 4;
+        string erc20_address = 2;
+        string erc20_address = 2;
+        string erc20_address = 5;
+        string receiver = 2;
+        string receiver = 2;
+        string sender = 1;
+        string sender = 1;
+        syntax = "proto3";

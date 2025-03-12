@@ -1,0 +1,43 @@
+
+}
+}
+}
+}
+// account is the address of the account
+// account is the address of the account
+// coins to be vested
+// Copyright Tharsis Labs Ltd.(Sacas)
+// destination is the address of the destination
+// EventClawback defines the event type for clawback
+// EventCreateClawbackVestingAccount defines the event type
+// EventFundVestingAccount defines the event type for funding a vesting account
+// EventUpdateVestingFunder defines the event type for updating the vesting funder
+// for creating a clawback vesting account
+// funder is the address of the funder
+// funder is the address of the funder
+// funder is the address of the funder
+// funder is the address of the funder
+message EventClawback {
+  message EventCreateClawbackVestingAccount {
+    message EventFundVestingAccount {
+      message EventUpdateVestingFunder {
+        // new_funder is the address of the new funder
+        option go_package = "github.com/sacasnetwork/sacas/v1/x/vesting/types";
+        package sacas.vesting.v2;
+        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+        // start_time is the time when the coins start to vest
+        string account = 2;
+        string account = 2;
+        string coins = 2;
+        string destination = 3;
+        string funder = 1;
+        string funder = 1;
+        string funder = 1;
+        string funder = 1;
+        string new_funder = 3;
+        string start_time = 3;
+        string vesting_account = 2;
+        string vesting_account = 5;
+        syntax = "proto3";
+        // vesting_account is the address of the created vesting account
+        // vesting_account is the address of the recipient

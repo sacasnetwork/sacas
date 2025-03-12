@@ -1,0 +1,13 @@
+
+}
+// Copyright Tharsis Labs Ltd.(Sacas)
+// ExtensionOptionDynamicFeeTx is an extension option that specifies the maxPrioPrice for cosmos tx
+[(gogoproto.customtype) = "cosmossdk.io/math.Int", (gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+// max_priority_price is the same as `max_priority_fee_per_gas` in eip-1559 spec
+message ExtensionOptionDynamicFeeTx {
+  option go_package = "github.com/sacasnetwork/sacas/v1/types";
+  package ethermint.types.v1;
+  // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  string max_priority_price = 1 syntax = "proto3";

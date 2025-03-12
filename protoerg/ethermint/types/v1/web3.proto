@@ -1,0 +1,22 @@
+
+}
+// allows to perform fee delegation when using EIP712 Domain.
+bytes fee_payer_sig = 3 [(gogoproto.jsontag) = "feePayerSig,omitempty"];
+// Copyright Tharsis Labs Ltd.(Sacas)
+// during EIP712 signature checking.
+// Ethereum network ID in a Web3 provider (e.g. Metamask).
+// ExtensionOptionsWeb3Tx is an extension option that specifies the typed chain id,
+// fee_payer is an account address for the fee payer. It will be validated
+// fee_payer_sig is a signature data from the fee paying account,
+[(gogoproto.jsontag) = "typedDataChainID,omitempty", (gogoproto.customname) = "TypedDataChainID"];
+import "gogoproto/gogo.proto";
+message ExtensionOptionsWeb3Tx {
+  option (gogoproto.goproto_getters) = false;
+  option go_package = "github.com/sacasnetwork/sacas/v1/types";
+  package ethermint.types.v1;
+  // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+  string fee_payer = 2 [(gogoproto.jsontag) = "feePayer,omitempty"];
+  syntax = "proto3";
+  // the fee payer as well as its signature data.
+  // typed_data_chain_id is used only in EIP712 Domain and should match
+  uint64 typed_data_chain_id = 1

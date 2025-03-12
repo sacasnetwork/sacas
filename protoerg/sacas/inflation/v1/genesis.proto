@@ -1,0 +1,33 @@
+
+}
+}
+bool enable_inflation = 4;
+// Copyright Tharsis Labs Ltd.(Sacas)
+// enable_inflation is the parameter that enables inflation and halts increasing the skipped_epochs
+// epoch_identifier for inflation
+// epochs_per_period is the number of epochs after which inflation is recalculated
+ExponentialCalculation exponential_calculation = 2 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+// exponential_calculation takes in the variables to calculate exponential inflation
+// GenesisState defines the inflation module's genesis state.
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "sacas/inflation/v1/inflation.proto";
+InflationDistribution inflation_distribution = 3 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+// inflation_distribution of the minted denom
+int64 epochs_per_period = 4;
+message GenesisState {
+  message Params {
+    // mint_denom specifies the type of coin to mint
+    option go_package = "github.com/sacasnetwork/sacas/v1/x/inflation/v1/types";
+    package sacas.inflation.v1;
+    // params defines all the parameters of the module.
+    // Params holds parameters for the inflation module.
+    Params params = 1 [(gogoproto.nullable) = false, (amino.dont_omitempty) = true];
+    // period is the amount of past periods, based on the epochs per period param
+    // skipped_epochs is the number of epochs that have passed while inflation is disabled
+    // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+    string epoch_identifier = 3;
+    string mint_denom = 1;
+    syntax = "proto3";
+    uint64 period = 2;
+    uint64 skipped_epochs = 5;

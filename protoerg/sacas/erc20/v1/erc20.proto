@@ -1,0 +1,77 @@
+
+}
+}
+}
+}
+}
+}
+bool enabled = 3;
+// contract_owner is the an ENUM specifying the type of ERC20 owner (0 invalid, 1 ModuleAccount, 2 external address)
+// Copyright Tharsis Labs Ltd.(Sacas)
+// Cosmos base denomination
+// Cosmos Coin and an ERC20 token address.
+// denom defines the cosmos base denomination to be mapped to
+// Deprecated: ProposalMetadata is used to parse a slice of denom metadata and generate
+// Deprecated: RegisterCoinProposal is a gov Content type to register a token pair for a
+// Deprecated: RegisterERC20Proposal is a gov Content type to register a token pair for an
+// Deprecated: ToggleTokenConversionProposal is a gov Content type to toggle the conversion
+// description of the proposal
+// description of the proposal
+// description of the proposal
+// enabled defines the token mapping enable status
+enum Owner {
+  // erc20addresses is a slice of  ERC20 token contract addresses
+  // erc20_address is the hex address of ERC20 contract token
+// ERC20 token.
+import "cosmos/bank/v1beta1/bank.proto";
+import "gogoproto/gogo.proto";
+  message ProposalMetadata {
+    message RegisterCoinProposal {
+      message RegisterERC20Proposal {
+        message ToggleTokenConversionProposal {
+          message TokenPair {
+            // metadata slice of the native Cosmos coins
+            // metadata slice of the native Cosmos coins
+            // native Cosmos coin. We're keeping it to remove the existing proposals from
+            // NOTE: Keep this message for backwards compatibility on proposals query
+            // NOTE: Keep this message for backwards compatibility on proposals query
+            // NOTE: Keep this message for backwards compatibility on proposals query
+            // of a token pair.
+            option (gogoproto.equal) = false;
+            option (gogoproto.equal) = false;
+            option (gogoproto.equal) = true;
+            option (gogoproto.equal) = true;
+            option (gogoproto.goproto_enum_prefix) = false;
+            option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+            Owner contract_owner = 4;
+            // Owner enumerates the ownership of a ERC20 contract.
+            OWNER_EXTERNAL = 2;
+            // OWNER_EXTERNAL - erc20 is owned by an external account.
+            OWNER_MODULE = 1;
+            // OWNER_MODULE - erc20 is owned by the erc20 module account.
+            OWNER_UNSPECIFIED = 0;
+            // OWNER_UNSPECIFIED defines an invalid/undefined owner.
+            package sacas.erc20.v1;
+            // protolint:disable MESSAGES_HAVE_COMMENT
+            repeated cosmos.bank.v1beta1.Metadata metadata = 1 [(gogoproto.nullable) = false];
+            repeated cosmos.bank.v1beta1.Metadata metadata = 3 [(gogoproto.nullable) = false];
+            repeated string erc20addresses = 3;
+            // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+            // store. After that, remove this message.
+            // store. After that, remove this message.
+            string denom = 2;
+            string description = 2;
+            string description = 2;
+            string description = 2;
+            string erc20_address = 1;
+            string title = 1;
+            string title = 1;
+            string title = 1;
+            string token = 3;
+            syntax = "proto3";
+            // the RegisterCoinProposal content. We're keeping it to remove the existing proposals from
+            // title of the proposal
+            // title of the proposal
+            // title of the proposal
+            // token identifier can be either the hex contract address of the ERC20 or the
+            // TokenPair defines an instance that records a pairing consisting of a native

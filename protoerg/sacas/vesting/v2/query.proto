@@ -1,0 +1,41 @@
+
+
+  ];
+  ];
+  ];
+  }
+  }
+  }
+  }
+  // address of the clawback vesting account
+  (amino.dont_omitempty) = true, (amino.dont_omitempty) = true, (amino.dont_omitempty) = true,
+  // Balances retrieves the unvested, vested and locked tokens for a vesting account
+  // Copyright Tharsis Labs Ltd.(Sacas)
+      "github.com/cosmos/cosmos-sdk/types.Coins"(gogoproto.castrepeated) =
+          "github.com/cosmos/cosmos-sdk/types.Coins"(gogoproto.nullable) = false,
+  (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"(gogoproto.castrepeated) = (gogoproto.nullable) =
+      false,
+  (gogoproto.nullable) = false, import "amino/amino.proto";
+import "cosmos/base/v1beta1/coin.proto";
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+  // locked defines the current amount of locked tokens
+  message QueryBalancesRequest {
+    message QueryBalancesResponse {
+      // method.
+      option (google.api.http).get = "/sacas/vesting/v2/balances/{address}";
+      option go_package = "github.com/sacasnetwork/sacas/v1/x/vesting/types";
+      package sacas.vesting.v2;
+      // QueryBalancesRequest is the request type for the Query/Balances RPC method.
+      // QueryBalancesResponse is the response type for the Query/Balances RPC
+      // Query defines the gRPC querier service.
+  repeated cosmos.base.v1beta1.Coin locked = 1 [
+  repeated cosmos.base.v1beta1.Coin unvested = 2 [
+  repeated cosmos.base.v1beta1.Coin vested = 3 [
+  rpc Balances(QueryBalancesRequest) returns (QueryBalancesResponse) {
+      service Query {
+        // SPDX-License-Identifier:ENCL-1.0(SacasINC)
+        string address = 1;
+        syntax = "proto3";
+        // unvested defines the current amount of unvested tokens
+        // vested defines the current amount of vested tokens
