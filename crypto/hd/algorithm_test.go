@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 
-	cryptocodec "github.com/sacasnetwork/sacas/v1/crypto/codec"
-	enccodec "github.com/sacasnetwork/sacas/v1/encoding/codec"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	cryptocodec "github.com/sacasnetwork/sacas/v11/crypto/codec"
+	enccodec "github.com/sacasnetwork/sacas/v11/encoding/codec"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 )
 
 var TestCodec amino.Codec

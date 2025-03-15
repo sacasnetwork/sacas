@@ -21,9 +21,9 @@ import (
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 
-	"github.com/sacasnetwork/sacas/v1/x/vesting/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/vesting/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	"github.com/sacasnetwork/sacas/v11/x/vesting/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/vesting/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 var (

@@ -7,8 +7,8 @@ import (
 
 	sdkmath "cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	testutiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	testutiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
 )
 
 // This tests setup contains expensive operations.

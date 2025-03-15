@@ -6,7 +6,7 @@ package types
 import (
 	fmt "fmt"
 
-	epochstypes "github.com/sacasnetwork/sacas/v1/x/epochs/types"
+	epochstypes "github.com/sacasnetwork/sacas/v11/x/epochs/types"
 )
 
 // NewGenesisState creates a new GenesisState object

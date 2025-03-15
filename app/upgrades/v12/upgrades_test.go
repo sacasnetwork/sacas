@@ -10,13 +10,13 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	v12 "github.com/sacasnetwork/sacas/v1/app/upgrades/v12"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/app"
+	v12 "github.com/sacasnetwork/sacas/v11/app/upgrades/v12"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 type UpgradeTestSuite struct {

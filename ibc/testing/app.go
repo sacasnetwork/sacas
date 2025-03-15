@@ -22,9 +22,9 @@ import (
 
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	sacasapp "github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	sacasapp "github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 var DefaultTestingAppInit func() (ibcgotesting.TestingApp, map[string]json.RawMessage) = sacasapp.SetupTestingApp

@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/query"
 
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 )
 
 func (suite *KeeperTestSuite) TestRevenues() {

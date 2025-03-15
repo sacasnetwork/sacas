@@ -16,11 +16,11 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	"github.com/sacasnetwork/sacas/v1/contracts"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/contracts"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
 )
 
 // DeployERC20Contract creates and deploys an ERC20 contract on the EVM with the

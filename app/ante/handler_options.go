@@ -14,14 +14,14 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	ibcante "github.com/cosmos/ibc-go/v6/modules/core/ante"
 	ibckeeper "github.com/cosmos/ibc-go/v6/modules/core/keeper"
-	anteutils "github.com/sacasnetwork/sacas/v1/app/ante/utils"
+	anteutils "github.com/sacasnetwork/sacas/v11/app/ante/utils"
 
-	cosmosante "github.com/sacasnetwork/sacas/v1/app/ante/cosmos"
-	evmante "github.com/sacasnetwork/sacas/v1/app/ante/evm"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	cosmosante "github.com/sacasnetwork/sacas/v11/app/ante/cosmos"
+	evmante "github.com/sacasnetwork/sacas/v11/app/ante/evm"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
 	sdkvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	vestingtypes "github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	vestingtypes "github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 // HandlerOptions defines the list of module keepers required to run the Sacas

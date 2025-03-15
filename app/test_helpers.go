@@ -24,11 +24,11 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 
-	"github.com/sacasnetwork/sacas/v1/cmd/config"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/cmd/config"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 func init() {

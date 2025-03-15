@@ -16,8 +16,8 @@ import (
 	"github.com/cosmos/ibc-go/v6/modules/core/exported"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/sacasnetwork/sacas/v1/ibc"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/ibc"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
 )
 
 // OnRecvPacket performs the ICS20 middleware receive callback for automatically

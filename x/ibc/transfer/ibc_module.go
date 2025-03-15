@@ -6,7 +6,7 @@ package transfer
 import (
 	ibctransfer "github.com/cosmos/ibc-go/v6/modules/apps/transfer"
 	porttypes "github.com/cosmos/ibc-go/v6/modules/core/05-port/types"
-	"github.com/sacasnetwork/sacas/v1/x/ibc/transfer/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/ibc/transfer/keeper"
 )
 
 var _ porttypes.IBCModule = IBCModule{}

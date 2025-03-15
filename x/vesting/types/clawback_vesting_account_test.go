@@ -11,8 +11,8 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	sdkvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 var (

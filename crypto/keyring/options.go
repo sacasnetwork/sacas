@@ -9,8 +9,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/types"
 
 	"github.com/sacasnetwork/sacas-ledger/ledger"
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	"github.com/sacasnetwork/sacas/v1/crypto/hd"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/crypto/hd"
 )
 
 // AppName defines the Ledger app used for signing. Sacas uses the Ethereum app
@@ -25,7 +25,7 @@ var (
 	// The Ledger derivation function is responsible for all signing and address generation.
 	SupportedAlgorithmsLedger = keyring.SigningAlgoList{hd.EthSecp256k1}
 	// LedgerDerivation defines the Sacas Ledger Go derivation (Ethereum app with EIP-712 signing)
-	LedgerDerivation = ledger.EvmosLedgerDerivation()
+	LedgerDerivation = ledger.SacasLedgerDerivation()
 	// CreatePubkey uses the ethsecp256k1 pubkey with Ethereum address generation and keccak hashing
 	CreatePubkey = func(key []byte) types.PubKey { return &ethsecp256k1.PubKey{Key: key} }
 	// SkipDERConversion represents whether the signed Ledger output should skip conversion from DER to BER.

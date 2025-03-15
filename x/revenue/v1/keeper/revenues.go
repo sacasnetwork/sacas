@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 )
 
 // GetRevenues returns all registered Revenues.

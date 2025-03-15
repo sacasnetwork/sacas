@@ -14,7 +14,7 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
 	"golang.org/x/exp/slices"
 )
 

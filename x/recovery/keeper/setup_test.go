@@ -9,19 +9,19 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	ibctesting "github.com/sacasnetwork/sacas/v1/ibc/testing"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/utils"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	ibctesting "github.com/sacasnetwork/sacas/v11/ibc/testing"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	claimstypes "github.com/sacasnetwork/sacas/v1/x/claims/types"
-	"github.com/sacasnetwork/sacas/v1/x/recovery/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	claimstypes "github.com/sacasnetwork/sacas/v11/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/types"
 )
 
 var (

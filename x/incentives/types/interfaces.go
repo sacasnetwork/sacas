@@ -16,10 +16,10 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	govv1beta1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"
 
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	inflationtypes "github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	inflationtypes "github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 // AccountKeeper defines the expected interface needed to retrieve account info.

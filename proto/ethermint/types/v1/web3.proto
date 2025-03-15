@@ -5,7 +5,7 @@ package sacas.types.v1;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/sacasnetwork/sacas/v1/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/types";
 
 // ExtensionOptionsWeb3Tx is an extension option that specifies the typed chain id,
 // the fee payer as well as its signature data.

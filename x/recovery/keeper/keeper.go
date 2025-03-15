@@ -17,7 +17,7 @@ import (
 	porttypes "github.com/cosmos/ibc-go/v6/modules/core/05-port/types"
 	"github.com/cosmos/ibc-go/v6/modules/core/exported"
 
-	"github.com/sacasnetwork/sacas/v1/x/recovery/types"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/types"
 )
 
 var _ porttypes.ICS4Wrapper = Keeper{}

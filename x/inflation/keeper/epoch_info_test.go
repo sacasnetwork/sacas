@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"fmt"
 
-	epochstypes "github.com/sacasnetwork/sacas/v1/x/epochs/types"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	epochstypes "github.com/sacasnetwork/sacas/v11/x/epochs/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 func (suite *KeeperTestSuite) TestSetGetEpochIdentifier() {

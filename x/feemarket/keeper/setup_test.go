@@ -12,8 +12,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 	"github.com/stretchr/testify/suite"
 )
 

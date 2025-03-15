@@ -11,7 +11,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	host "github.com/cosmos/ibc-go/v6/modules/core/24-host"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 var (

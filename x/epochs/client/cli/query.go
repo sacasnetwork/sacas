@@ -12,7 +12,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/sacasnetwork/sacas/v1/x/epochs/types"
+	"github.com/sacasnetwork/sacas/v11/x/epochs/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

@@ -20,9 +20,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/sacasnetwork/sacas/v1/x/claims/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/claims/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/claims/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/claims/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
 )
 
 var (

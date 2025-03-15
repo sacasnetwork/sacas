@@ -15,8 +15,8 @@ import (
 	clienttypes "github.com/cosmos/ibc-go/v6/modules/core/02-client/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
 )
 
 // EventIBCTransfer is the event type emitted when a transfer is executed.

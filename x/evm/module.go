@@ -21,9 +21,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/sacasnetwork/sacas/v1/x/evm/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/evm/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/evm/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 var (

@@ -9,9 +9,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	sacasd "github.com/sacasnetwork/sacas/v1/cmd/sacasd"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/app"
+	sacasd "github.com/sacasnetwork/sacas/v11/cmd/sacasd"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 func TestInitCmd(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	clientkeys "github.com/sacasnetwork/sacas/v1/client/keys"
-	"github.com/sacasnetwork/sacas/v1/crypto/hd"
+	clientkeys "github.com/sacasnetwork/sacas/v11/client/keys"
+	"github.com/sacasnetwork/sacas/v11/crypto/hd"
 )
 
 // KeyCommands registers a sub-tree of commands to interact with

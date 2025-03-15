@@ -6,9 +6,9 @@ import (
 	"cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestTotalUnclaimed() {

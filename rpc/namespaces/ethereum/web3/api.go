@@ -3,7 +3,7 @@
 package web3
 
 import (
-	"github.com/sacasnetwork/sacas/v1/version"
+	"github.com/sacasnetwork/sacas/v11/version"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"

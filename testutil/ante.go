@@ -4,8 +4,8 @@ package testutil
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/encoding"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/encoding"
 )
 
 // NextFn is a no-op function that returns the context and no error in order to mock

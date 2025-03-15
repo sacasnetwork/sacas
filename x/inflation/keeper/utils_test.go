@@ -4,11 +4,11 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	epochstypes "github.com/sacasnetwork/sacas/v1/x/epochs/types"
-	evm "github.com/sacasnetwork/sacas/v1/x/evm/types"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	epochstypes "github.com/sacasnetwork/sacas/v11/x/epochs/types"
+	evm "github.com/sacasnetwork/sacas/v11/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 // Test helpers

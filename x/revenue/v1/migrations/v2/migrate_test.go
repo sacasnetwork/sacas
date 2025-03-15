@@ -6,14 +6,14 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	v2 "github.com/sacasnetwork/sacas/v1/x/revenue/v1/migrations/v2"
-	v2types "github.com/sacasnetwork/sacas/v1/x/revenue/v1/migrations/v2/types"
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	v2 "github.com/sacasnetwork/sacas/v11/x/revenue/v1/migrations/v2"
+	v2types "github.com/sacasnetwork/sacas/v11/x/revenue/v1/migrations/v2/types"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sacasnetwork/sacas/v1/app"
+	"github.com/sacasnetwork/sacas/v11/app"
 	"github.com/stretchr/testify/require"
 )
 

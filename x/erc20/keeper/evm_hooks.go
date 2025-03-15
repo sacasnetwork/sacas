@@ -11,10 +11,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	"github.com/sacasnetwork/sacas/v1/contracts"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/contracts"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
 )
 
 var _ evmtypes.EvmHooks = Hooks{}

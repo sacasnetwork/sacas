@@ -7,10 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/ics20"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	"github.com/sacasnetwork/sacas/v11/precompiles/ics20"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 func (s *PrecompileTestSuite) TestTransferEvent() {

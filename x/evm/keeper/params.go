@@ -4,7 +4,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // GetParams returns the total set of evm parameters.

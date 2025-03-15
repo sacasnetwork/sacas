@@ -6,17 +6,17 @@ import (
 	"time"
 
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	sacasutiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
+	sacasutiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkauthz "github.com/cosmos/cosmos-sdk/x/authz"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/staking"
-	"github.com/sacasnetwork/sacas/v1/precompiles/testutil"
-	sacasutil "github.com/sacasnetwork/sacas/v1/testutil"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	"github.com/sacasnetwork/sacas/v11/precompiles/staking"
+	"github.com/sacasnetwork/sacas/v11/precompiles/testutil"
+	sacasutil "github.com/sacasnetwork/sacas/v11/testutil"
 )
 
 func (s *PrecompileTestSuite) TestApprove() {

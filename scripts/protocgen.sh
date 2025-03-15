@@ -19,5 +19,5 @@ for dir in $proto_dirs; do
 done
 
 # move proto files to the right places
-cp -r github.com/sacasnetwork/sacas/v*/* ./
+cp -r github.com/sacasnetwork/sacas/v11/v*/* ./
 rm -rf github.com

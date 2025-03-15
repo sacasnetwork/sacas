@@ -9,8 +9,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	rpctypes "github.com/sacasnetwork/sacas/v1/rpc/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	rpctypes "github.com/sacasnetwork/sacas/v11/rpc/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 	"github.com/pkg/errors"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
 )

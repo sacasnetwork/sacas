@@ -6,8 +6,8 @@ import (
 	"cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 func (suite *KeeperTestSuite) TestPeriod() { //nolint:dupl

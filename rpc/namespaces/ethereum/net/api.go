@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/sacasnetwork/sacas/v1/types"
+	"github.com/sacasnetwork/sacas/v11/types"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 )
 

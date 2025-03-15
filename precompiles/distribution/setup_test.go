@@ -3,8 +3,8 @@ package distribution_test
 import (
 	"testing"
 
-	"github.com/sacasnetwork/sacas/v1/precompiles/distribution"
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
+	"github.com/sacasnetwork/sacas/v11/precompiles/distribution"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -15,8 +15,8 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	sacasapp "github.com/sacasnetwork/sacas/v1/app"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	sacasapp "github.com/sacasnetwork/sacas/v11/app"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 	"github.com/stretchr/testify/suite"
 	tmtypes "github.com/tendermint/tendermint/types"
 )

@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
-	epochstypes "github.com/sacasnetwork/sacas/v1/x/epochs/types"
-	incentivestypes "github.com/sacasnetwork/sacas/v1/x/incentives/types"
+	epochstypes "github.com/sacasnetwork/sacas/v11/x/epochs/types"
+	incentivestypes "github.com/sacasnetwork/sacas/v11/x/incentives/types"
 )
 
 var (

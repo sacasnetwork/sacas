@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
 )
 
 func (suite *KeeperTestSuite) TestParams() {

@@ -9,11 +9,11 @@ import (
 	distrtypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	testutil "github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
-	vestingtypes "github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	testutil "github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
+	vestingtypes "github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestEndBlock() {

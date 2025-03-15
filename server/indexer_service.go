@@ -10,7 +10,7 @@ import (
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 	"github.com/tendermint/tendermint/types"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 )
 
 const (

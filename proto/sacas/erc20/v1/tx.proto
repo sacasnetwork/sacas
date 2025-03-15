@@ -10,7 +10,7 @@ import "sacas/erc20/v1/genesis.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/erc20/types";
 
 // Msg defines the erc20 Msg service.
 service Msg {

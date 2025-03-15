@@ -6,7 +6,7 @@ package sacas.revenue.v1;
 import "sacas/revenue/v1/revenue.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/revenue/v1/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/revenue/v1/types";
 
 // GenesisState defines the module's genesis state.
 message GenesisState {

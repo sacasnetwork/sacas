@@ -5,7 +5,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/sacasnetwork/sacas/v1/types"
+	"github.com/sacasnetwork/sacas/v11/types"
 )
 
 // Validate performs a basic validation of a GenesisAccount fields.

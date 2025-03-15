@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 )
 
 // NewHandler defines the fees module handler instance

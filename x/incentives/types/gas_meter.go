@@ -5,7 +5,7 @@ package types
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 )
 
 // NewGasMeter returns an instance of GasMeter

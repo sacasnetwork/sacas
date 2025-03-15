@@ -12,8 +12,8 @@ import (
 
 	clienttypes "github.com/cosmos/ibc-go/v6/modules/core/02-client/types"
 
-	"github.com/sacasnetwork/sacas/v1/ibc"
-	"github.com/sacasnetwork/sacas/v1/x/recovery/keeper"
+	"github.com/sacasnetwork/sacas/v11/ibc"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/keeper"
 )
 
 var _ porttypes.Middleware = &IBCMiddleware{}

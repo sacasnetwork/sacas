@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	"github.com/sacasnetwork/sacas/v1/testutil/network"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	"github.com/sacasnetwork/sacas/v11/testutil/network"
 
-	sacasnetwork "github.com/sacasnetwork/sacas/v1/testutil/network"
+	sacasnetwork "github.com/sacasnetwork/sacas/v11/testutil/network"
 )
 
 type IntegrationTestSuite struct {

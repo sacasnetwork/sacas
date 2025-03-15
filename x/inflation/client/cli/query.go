@@ -11,7 +11,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 // GetQueryCmd returns the cli query commands for the inflation module.

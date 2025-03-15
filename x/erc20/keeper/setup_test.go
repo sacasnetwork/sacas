@@ -14,10 +14,10 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/sacasnetwork/sacas/v1/app"
-	ibctesting "github.com/sacasnetwork/sacas/v1/ibc/testing"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
-	evm "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	ibctesting "github.com/sacasnetwork/sacas/v11/ibc/testing"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
+	evm "github.com/sacasnetwork/sacas/v11/x/evm/types"
 	"github.com/stretchr/testify/suite"
 )
 

@@ -8,7 +8,7 @@ import "cosmos_proto/cosmos.proto";
 import "sacas/recovery/v1/genesis.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/recovery/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/recovery/types";
 
 // Msg defines the recovery Msg service.
 service Msg {

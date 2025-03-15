@@ -3,7 +3,7 @@
 syntax = "proto3";
 package sacas.vesting.v1;
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/vesting/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/vesting/types";
 
 // EventCreateClawbackVestingAccount defines the event type
 // for creating a clawback vesting account

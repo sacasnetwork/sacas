@@ -21,10 +21,10 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	"github.com/cosmos/ibc-go/v6/testing/mock"
 
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/utils"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // ChainIDPrefix defines the default chain ID prefix for Sacas test chains

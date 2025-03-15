@@ -9,7 +9,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
 )
 
 const (

@@ -12,10 +12,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/incentives/types"
+	"github.com/sacasnetwork/sacas/v11/x/incentives/types"
 )
 
 var _ = Describe("Performing EVM transactions", Ordered, func() {

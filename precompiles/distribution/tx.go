@@ -6,9 +6,9 @@ package distribution
 import (
 	"fmt"
 
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
 
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
 
 	"github.com/ethereum/go-ethereum/common"
 

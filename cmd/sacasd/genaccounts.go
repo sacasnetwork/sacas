@@ -23,13 +23,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/genutil"
 	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
 
-	"github.com/sacasnetwork/sacas/v1/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	sacaskr "github.com/sacasnetwork/sacas/v1/crypto/keyring"
+	sacaskr "github.com/sacasnetwork/sacas/v11/crypto/keyring"
 
-	vestingcli "github.com/sacasnetwork/sacas/v1/x/vesting/client/cli"
-	vestingtypes "github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	vestingcli "github.com/sacasnetwork/sacas/v11/x/vesting/client/cli"
+	vestingtypes "github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 const (

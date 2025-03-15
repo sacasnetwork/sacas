@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"github.com/sacasnetwork/sacas/v1/x/recovery/types"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/types"
 )
 
 // GetQueryCmd returns the parent command for all recovery CLI query commands.

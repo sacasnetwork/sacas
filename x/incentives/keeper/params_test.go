@@ -1,6 +1,6 @@
 package keeper_test
 
-import "github.com/sacasnetwork/sacas/v1/x/incentives/types"
+import "github.com/sacasnetwork/sacas/v11/x/incentives/types"
 
 func (suite *KeeperTestSuite) TestParams() {
 	params := suite.app.IncentivesKeeper.GetParams(suite.ctx)

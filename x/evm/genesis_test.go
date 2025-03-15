@@ -6,11 +6,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/x/evm"
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
-	"github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
+	"github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 func (suite *EvmTestSuite) TestInitGenesis() {

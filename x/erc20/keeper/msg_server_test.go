@@ -12,10 +12,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/sacasnetwork/sacas/v1/x/erc20/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestConvertCoinNativeCoin() {

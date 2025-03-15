@@ -6,7 +6,7 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // RejectMessagesDecorator prevents invalid msg types from being executed

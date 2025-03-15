@@ -24,8 +24,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sacasnetwork/sacas/v1/rpc/ethereum/pubsub"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/rpc/ethereum/pubsub"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 var (

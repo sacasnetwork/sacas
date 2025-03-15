@@ -8,10 +8,10 @@ import (
 	geth "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/staking"
-	"github.com/sacasnetwork/sacas/v1/precompiles/testutil"
-	sacasutiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	"github.com/sacasnetwork/sacas/v11/precompiles/staking"
+	"github.com/sacasnetwork/sacas/v11/precompiles/testutil"
+	sacasutiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
 )
 
 func (s *PrecompileTestSuite) TestDelegate() {

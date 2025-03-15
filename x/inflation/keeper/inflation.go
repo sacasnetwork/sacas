@@ -6,11 +6,11 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 
-	utils "github.com/sacasnetwork/sacas/v1/utils"
-	incentivestypes "github.com/sacasnetwork/sacas/v1/x/incentives/types"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	utils "github.com/sacasnetwork/sacas/v11/utils"
+	incentivestypes "github.com/sacasnetwork/sacas/v11/x/incentives/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 // 200M token at year 4 allocated to the team

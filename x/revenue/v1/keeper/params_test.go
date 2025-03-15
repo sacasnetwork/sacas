@@ -1,6 +1,6 @@
 package keeper_test
 
-import "github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+import "github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 
 func (suite *KeeperTestSuite) TestParams() {
 	params := suite.app.RevenueKeeper.GetParams(suite.ctx)

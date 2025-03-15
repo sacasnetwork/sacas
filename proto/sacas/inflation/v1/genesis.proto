@@ -7,7 +7,7 @@ import "gogoproto/gogo.proto";
 
 import "sacas/inflation/v1/inflation.proto";
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/inflation/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/inflation/types";
 
 // GenesisState defines the inflation module's genesis state.
 message GenesisState {

@@ -22,9 +22,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/inflation/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 // type check to ensure the interface is properly implemented

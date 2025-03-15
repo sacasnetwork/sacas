@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"sort"
 
-	cryptohd "github.com/sacasnetwork/sacas/v1/crypto/hd"
+	cryptohd "github.com/sacasnetwork/sacas/v11/crypto/hd"
 
 	bip39 "github.com/cosmos/go-bip39"
 	"github.com/spf13/cobra"

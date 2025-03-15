@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"reflect"
 
-	"github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 )
 
 func (suite *KeeperTestSuite) TestSetGetParams() {

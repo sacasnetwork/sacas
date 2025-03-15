@@ -6,8 +6,8 @@ package testutil
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/sacasnetwork/sacas/v1/app/ante/evm"
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
+	"github.com/sacasnetwork/sacas/v11/app/ante/evm"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
 )
 
 // NewStateDB returns a new StateDB for testing purposes.

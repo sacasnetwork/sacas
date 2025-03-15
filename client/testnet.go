@@ -40,13 +40,13 @@ import (
 	mintypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/sacasnetwork/sacas/v1/crypto/hd"
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	srvflags "github.com/sacasnetwork/sacas/v1/server/flags"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/crypto/hd"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	srvflags "github.com/sacasnetwork/sacas/v11/server/flags"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	"github.com/sacasnetwork/sacas/v1/testutil/network"
+	"github.com/sacasnetwork/sacas/v11/testutil/network"
 )
 
 var (

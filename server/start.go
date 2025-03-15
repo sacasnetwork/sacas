@@ -48,11 +48,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/server/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sacasnetwork/sacas/v1/indexer"
-	ethdebug "github.com/sacasnetwork/sacas/v1/rpc/namespaces/ethereum/debug"
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	srvflags "github.com/sacasnetwork/sacas/v1/server/flags"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	"github.com/sacasnetwork/sacas/v11/indexer"
+	ethdebug "github.com/sacasnetwork/sacas/v11/rpc/namespaces/ethereum/debug"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	srvflags "github.com/sacasnetwork/sacas/v11/server/flags"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 )
 
 // DBOpener is a function to open `application.db`, potentially with customized options.

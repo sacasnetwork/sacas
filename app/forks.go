@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
 
-	v82 "github.com/sacasnetwork/sacas/v1/app/upgrades/v8_2"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	v82 "github.com/sacasnetwork/sacas/v11/app/upgrades/v8_2"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 // ScheduleForkUpgrade executes any necessary fork logic for based upon the current

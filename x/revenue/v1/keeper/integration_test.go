@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/sacasnetwork/sacas/v1/precompiles/staking"
+	"github.com/sacasnetwork/sacas/v11/precompiles/staking"
 
 	"github.com/ethereum/go-ethereum/common"
 	. "github.com/onsi/ginkgo/v2"
@@ -14,11 +14,11 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 )

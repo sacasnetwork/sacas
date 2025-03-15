@@ -9,12 +9,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	"github.com/cosmos/cosmos-sdk/simapp/params"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/crypto/hd"
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	"github.com/sacasnetwork/sacas/v1/tests/integration/ledger/mocks"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/crypto/hd"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	"github.com/sacasnetwork/sacas/v11/tests/integration/ledger/mocks"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
 
 	"github.com/spf13/cobra"
 

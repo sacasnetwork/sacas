@@ -9,9 +9,9 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
 )
 
 // EndBlocker checks if the airdrop claiming period has ended in order to

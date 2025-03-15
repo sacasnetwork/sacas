@@ -11,7 +11,7 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 	"github.com/stretchr/testify/require"
 )
 

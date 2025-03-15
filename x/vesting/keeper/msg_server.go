@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"time"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 
 	"github.com/armon/go-metrics"
 
@@ -20,7 +20,7 @@ import (
 	vestingexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
 	sdkvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	"github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 var _ types.MsgServer = &Keeper{}

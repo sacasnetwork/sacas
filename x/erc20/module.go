@@ -21,9 +21,9 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/erc20/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
 )
 
 // type check to ensure the interface is properly implemented

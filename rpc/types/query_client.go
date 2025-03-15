@@ -12,8 +12,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 )
 
 // QueryClient defines a gRPC Client used for:

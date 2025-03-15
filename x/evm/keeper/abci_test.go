@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 	"github.com/tendermint/tendermint/abci/types"
 )
 

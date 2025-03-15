@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
 )
 
 // CallArgs is a struct to define all relevant data to call a smart contract.

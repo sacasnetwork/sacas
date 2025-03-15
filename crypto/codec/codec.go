@@ -6,7 +6,7 @@ import (
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
 )
 
 // RegisterInterfaces register the Sacas key concrete types.

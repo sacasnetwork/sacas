@@ -8,10 +8,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/precompiles/distribution"
-	"github.com/sacasnetwork/sacas/v1/utils"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/precompiles/distribution"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 func (s *PrecompileTestSuite) TestIsTransaction() {

@@ -22,9 +22,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/sacasnetwork/sacas/v1/x/recovery/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/recovery/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/recovery/types"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/recovery/types"
 )
 
 // type check to ensure the interface is properly implemented

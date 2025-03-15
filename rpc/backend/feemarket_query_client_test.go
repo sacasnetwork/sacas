@@ -2,9 +2,9 @@ package backend
 
 import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sacasnetwork/sacas/v1/rpc/backend/mocks"
-	rpc "github.com/sacasnetwork/sacas/v1/rpc/types"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/rpc/backend/mocks"
+	rpc "github.com/sacasnetwork/sacas/v11/rpc/types"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 )
 
 var _ feemarkettypes.QueryClient = &mocks.FeeMarketQueryClient{}

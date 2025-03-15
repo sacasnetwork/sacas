@@ -12,13 +12,13 @@ import (
 	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
 	"github.com/tendermint/tendermint/version"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/utils"
-	"github.com/sacasnetwork/sacas/v1/x/claims"
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	"github.com/sacasnetwork/sacas/v11/x/claims"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 )
 
 type GenesisTestSuite struct {

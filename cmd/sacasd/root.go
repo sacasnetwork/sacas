@@ -39,17 +39,17 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
 
-	sacasclient "github.com/sacasnetwork/sacas/v1/client"
-	"github.com/sacasnetwork/sacas/v1/client/debug"
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	"github.com/sacasnetwork/sacas/v1/ethereum/eip712"
-	sacasserver "github.com/sacasnetwork/sacas/v1/server"
-	servercfg "github.com/sacasnetwork/sacas/v1/server/config"
-	srvflags "github.com/sacasnetwork/sacas/v1/server/flags"
+	sacasclient "github.com/sacasnetwork/sacas/v11/client"
+	"github.com/sacasnetwork/sacas/v11/client/debug"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	"github.com/sacasnetwork/sacas/v11/ethereum/eip712"
+	sacasserver "github.com/sacasnetwork/sacas/v11/server"
+	servercfg "github.com/sacasnetwork/sacas/v11/server/config"
+	srvflags "github.com/sacasnetwork/sacas/v11/server/flags"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	cmdcfg "github.com/sacasnetwork/sacas/v1/cmd/config"
-	sacaskr "github.com/sacasnetwork/sacas/v1/crypto/keyring"
+	"github.com/sacasnetwork/sacas/v11/app"
+	cmdcfg "github.com/sacasnetwork/sacas/v11/cmd/config"
+	sacaskr "github.com/sacasnetwork/sacas/v11/crypto/keyring"
 )
 
 const (

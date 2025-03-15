@@ -14,9 +14,9 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	transferkeeper "github.com/sacasnetwork/sacas/v1/x/ibc/transfer/keeper"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	transferkeeper "github.com/sacasnetwork/sacas/v11/x/ibc/transfer/keeper"
 )
 
 var _ vm.PrecompiledContract = &Precompile{}

@@ -8,7 +8,7 @@ import (
 	distributionkeeper "github.com/cosmos/cosmos-sdk/x/distribution/keeper"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core/vm"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
 )
 
 const (

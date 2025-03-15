@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/sacasnetwork/sacas/v1/ethereum/eip712"
-	sacas "github.com/sacasnetwork/sacas/v1/types"
+	"github.com/sacasnetwork/sacas/v11/ethereum/eip712"
+	sacas "github.com/sacasnetwork/sacas/v11/types"
 	"github.com/pkg/errors"
 
 	"github.com/spf13/cobra"

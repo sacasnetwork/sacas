@@ -12,13 +12,13 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v6/modules/core/04-channel/types"
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	ibctesting "github.com/sacasnetwork/sacas/v1/ibc/testing"
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/utils"
-	"github.com/sacasnetwork/sacas/v1/x/claims/types"
-	inflationtypes "github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	ibctesting "github.com/sacasnetwork/sacas/v11/ibc/testing"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	"github.com/sacasnetwork/sacas/v11/x/claims/types"
+	inflationtypes "github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 type IBCTestingSuite struct {

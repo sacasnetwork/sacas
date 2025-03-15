@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	simapp "github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/x/epochs"
-	"github.com/sacasnetwork/sacas/v1/x/epochs/types"
+	simapp "github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/x/epochs"
+	"github.com/sacasnetwork/sacas/v11/x/epochs/types"
 )
 
 func TestEpochsExportGenesis(t *testing.T) {

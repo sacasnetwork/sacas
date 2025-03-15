@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/sacasnetwork/sacas/v1/utils"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/keeper"
+	"github.com/sacasnetwork/sacas/v11/utils"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/keeper"
 
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
@@ -15,8 +15,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/sacasnetwork/sacas/v1/crypto/ethsecp256k1"
-	"github.com/sacasnetwork/sacas/v1/testutil"
+	"github.com/sacasnetwork/sacas/v11/crypto/ethsecp256k1"
+	"github.com/sacasnetwork/sacas/v11/testutil"
 
 	transfertypes "github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
 	clienttypes "github.com/cosmos/ibc-go/v6/modules/core/02-client/types"
@@ -24,11 +24,11 @@ import (
 	ibcgotesting "github.com/cosmos/ibc-go/v6/testing"
 	ibcmock "github.com/cosmos/ibc-go/v6/testing/mock"
 
-	"github.com/sacasnetwork/sacas/v1/contracts"
-	claimstypes "github.com/sacasnetwork/sacas/v1/x/claims/types"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
-	inflationtypes "github.com/sacasnetwork/sacas/v1/x/inflation/types"
-	vestingtypes "github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	"github.com/sacasnetwork/sacas/v11/contracts"
+	claimstypes "github.com/sacasnetwork/sacas/v11/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
+	inflationtypes "github.com/sacasnetwork/sacas/v11/x/inflation/types"
+	vestingtypes "github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 var erc20Denom = "erc20/0xdac17f958d2ee523a2206206994597c13d831ec7"

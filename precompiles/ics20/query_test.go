@@ -6,10 +6,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/query"
 	"github.com/cosmos/ibc-go/v6/modules/apps/transfer/types"
 	ibctesting "github.com/cosmos/ibc-go/v6/testing"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/ics20"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	"github.com/sacasnetwork/sacas/v11/precompiles/ics20"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 func (s *PrecompileTestSuite) TestDenomTrace() {

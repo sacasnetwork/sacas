@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/sacasnetwork/sacas/v1/x/epochs/types"
+	"github.com/sacasnetwork/sacas/v11/x/epochs/types"
 )
 
 func (suite *KeeperTestSuite) TestEpochLifeCycle() {

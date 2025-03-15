@@ -3,7 +3,7 @@ package cli
 import (
 	"testing"
 
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
 	"github.com/stretchr/testify/require"
 )
 

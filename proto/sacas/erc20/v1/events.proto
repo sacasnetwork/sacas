@@ -3,7 +3,7 @@
 syntax = "proto3";
 package sacas.erc20.v1;
 
-option go_package = "github.com/sacasnetwork/sacas/v1/x/erc20/types";
+option go_package = "github.com/sacasnetwork/sacas/v11/x/erc20/types";
 
 // EventRegisterPair is an event emitted when a coin is registered.
 message EventRegisterPair {

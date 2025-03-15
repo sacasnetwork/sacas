@@ -10,12 +10,12 @@ import (
 
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/sacasnetwork/sacas/v1/testutil"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	evm "github.com/sacasnetwork/sacas/v1/x/evm/types"
-	"github.com/sacasnetwork/sacas/v1/x/incentives/types"
-	vestingtypes "github.com/sacasnetwork/sacas/v1/x/vesting/types"
+	"github.com/sacasnetwork/sacas/v11/testutil"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	evm "github.com/sacasnetwork/sacas/v11/x/evm/types"
+	"github.com/sacasnetwork/sacas/v11/x/incentives/types"
+	vestingtypes "github.com/sacasnetwork/sacas/v11/x/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestEvmHooksStoreTxGasUsed() {

@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/utils"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/sacasnetwork/sacas/v1/precompiles/authorization"
-	cmn "github.com/sacasnetwork/sacas/v1/precompiles/common"
-	testutiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/precompiles/authorization"
+	cmn "github.com/sacasnetwork/sacas/v11/precompiles/common"
+	testutiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
 	"github.com/stretchr/testify/require"
 )
 

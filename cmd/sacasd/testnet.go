@@ -40,16 +40,16 @@ import (
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/sacasnetwork/sacas/v1/crypto/hd"
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	srvflags "github.com/sacasnetwork/sacas/v1/server/flags"
+	"github.com/sacasnetwork/sacas/v11/crypto/hd"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	srvflags "github.com/sacasnetwork/sacas/v11/server/flags"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	cmdcfg "github.com/sacasnetwork/sacas/v1/cmd/config"
-	sacaskr "github.com/sacasnetwork/sacas/v1/crypto/keyring"
-	"github.com/sacasnetwork/sacas/v1/testutil/network"
+	cmdcfg "github.com/sacasnetwork/sacas/v11/cmd/config"
+	sacaskr "github.com/sacasnetwork/sacas/v11/crypto/keyring"
+	"github.com/sacasnetwork/sacas/v11/testutil/network"
 )
 
 var (

@@ -14,13 +14,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/auth/ante"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/cmd/config"
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	"github.com/sacasnetwork/sacas/v1/ethereum/eip712"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	"github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/cmd/config"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	"github.com/sacasnetwork/sacas/v11/ethereum/eip712"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	"github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/utils"
 	"github.com/stretchr/testify/require"
 )
 

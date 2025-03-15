@@ -12,11 +12,11 @@ import (
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	evm "github.com/sacasnetwork/sacas/v1/x/evm/types"
-	feemarkettypes "github.com/sacasnetwork/sacas/v1/x/feemarket/types"
-	"github.com/sacasnetwork/sacas/v1/x/revenue/v1/types"
+	"github.com/sacasnetwork/sacas/v11/app"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	evm "github.com/sacasnetwork/sacas/v11/x/evm/types"
+	feemarkettypes "github.com/sacasnetwork/sacas/v11/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/x/revenue/v1/types"
 
 	"github.com/stretchr/testify/suite"
 )

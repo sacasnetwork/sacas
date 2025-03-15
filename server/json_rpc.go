@@ -14,10 +14,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/server/types"
 	ethlog "github.com/ethereum/go-ethereum/log"
 	ethrpc "github.com/ethereum/go-ethereum/rpc"
-	"github.com/sacasnetwork/sacas/v1/rpc"
+	"github.com/sacasnetwork/sacas/v11/rpc"
 
-	"github.com/sacasnetwork/sacas/v1/server/config"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	"github.com/sacasnetwork/sacas/v11/server/config"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 )
 
 // StartJSONRPC starts the JSON-RPC server

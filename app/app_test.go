@@ -19,8 +19,8 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 func TestSacasExport(t *testing.T) {

@@ -10,8 +10,8 @@ import (
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	cmdcfg "github.com/sacasnetwork/sacas/v1/cmd/config"
+	"github.com/sacasnetwork/sacas/v11/app"
+	cmdcfg "github.com/sacasnetwork/sacas/v11/cmd/config"
 )
 
 func main() {

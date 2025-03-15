@@ -13,7 +13,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ibctesting "github.com/cosmos/ibc-go/v6/testing"
 	ibchelpers "github.com/cosmos/ibc-go/v6/testing/simapp/helpers"
-	"github.com/sacasnetwork/sacas/v1/app"
+	"github.com/sacasnetwork/sacas/v11/app"
 	"github.com/stretchr/testify/require"
 )
 

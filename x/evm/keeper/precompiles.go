@@ -15,10 +15,10 @@ import (
 	distributionkeeper "github.com/cosmos/cosmos-sdk/x/distribution/keeper"
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	channelkeeper "github.com/cosmos/ibc-go/v6/modules/core/04-channel/keeper"
-	distprecompile "github.com/sacasnetwork/sacas/v1/precompiles/distribution"
-	ics20 "github.com/sacasnetwork/sacas/v1/precompiles/ics20"
-	stakingprecompile "github.com/sacasnetwork/sacas/v1/precompiles/staking"
-	transferkeeper "github.com/sacasnetwork/sacas/v1/x/ibc/transfer/keeper"
+	distprecompile "github.com/sacasnetwork/sacas/v11/precompiles/distribution"
+	ics20 "github.com/sacasnetwork/sacas/v11/precompiles/ics20"
+	stakingprecompile "github.com/sacasnetwork/sacas/v11/precompiles/staking"
+	transferkeeper "github.com/sacasnetwork/sacas/v11/x/ibc/transfer/keeper"
 )
 
 // AvailablePrecompiles returns the list of all available precompiled contracts.

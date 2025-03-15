@@ -1,12 +1,12 @@
 package ante_test
 
 import (
-	ethante "github.com/sacasnetwork/sacas/v1/app/ante/evm"
-	"github.com/sacasnetwork/sacas/v1/encoding"
-	"github.com/sacasnetwork/sacas/v1/types"
+	ethante "github.com/sacasnetwork/sacas/v11/app/ante/evm"
+	"github.com/sacasnetwork/sacas/v11/encoding"
+	"github.com/sacasnetwork/sacas/v11/types"
 
-	"github.com/sacasnetwork/sacas/v1/app"
-	"github.com/sacasnetwork/sacas/v1/app/ante"
+	"github.com/sacasnetwork/sacas/v11/app"
+	"github.com/sacasnetwork/sacas/v11/app/ante"
 )
 
 func (suite *AnteTestSuite) TestValidateHandlerOptions() {

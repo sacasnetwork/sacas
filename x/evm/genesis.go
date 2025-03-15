@@ -12,9 +12,9 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
-	"github.com/sacasnetwork/sacas/v1/x/evm/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/evm/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // InitGenesis initializes genesis state based on exported genesis

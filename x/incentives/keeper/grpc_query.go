@@ -16,9 +16,9 @@ import (
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/cosmos/cosmos-sdk/types/query"
 	"github.com/ethereum/go-ethereum/common"
-	sacastypes "github.com/sacasnetwork/sacas/v1/types"
+	sacastypes "github.com/sacasnetwork/sacas/v11/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/incentives/types"
+	"github.com/sacasnetwork/sacas/v11/x/incentives/types"
 )
 
 var _ types.QueryServer = Keeper{}

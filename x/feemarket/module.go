@@ -21,9 +21,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/sacasnetwork/sacas/v1/x/feemarket/client/cli"
-	"github.com/sacasnetwork/sacas/v1/x/feemarket/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/feemarket/types"
+	"github.com/sacasnetwork/sacas/v11/x/feemarket/client/cli"
+	"github.com/sacasnetwork/sacas/v11/x/feemarket/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/feemarket/types"
 )
 
 var (

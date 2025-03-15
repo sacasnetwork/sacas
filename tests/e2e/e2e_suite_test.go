@@ -10,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/sacasnetwork/sacas/v1/tests/e2e/upgrade"
-	"github.com/sacasnetwork/sacas/v1/utils"
+	"github.com/sacasnetwork/sacas/v11/tests/e2e/upgrade"
+	"github.com/sacasnetwork/sacas/v11/utils"
 )
 
 const (

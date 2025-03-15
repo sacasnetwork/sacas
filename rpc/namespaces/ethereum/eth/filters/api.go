@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/sacasnetwork/sacas/v1/rpc/types"
+	"github.com/sacasnetwork/sacas/v11/rpc/types"
 
 	"github.com/tendermint/tendermint/libs/log"
 
@@ -22,7 +22,7 @@ import (
 	"github.com/ethereum/go-ethereum/eth/filters"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // FilterAPI gathers

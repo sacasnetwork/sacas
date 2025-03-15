@@ -12,12 +12,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	utiltx "github.com/sacasnetwork/sacas/v1/testutil/tx"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	utiltx "github.com/sacasnetwork/sacas/v11/testutil/tx"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 
-	"github.com/sacasnetwork/sacas/v1/x/erc20/keeper"
-	"github.com/sacasnetwork/sacas/v1/x/erc20/types"
-	inflationtypes "github.com/sacasnetwork/sacas/v1/x/inflation/types"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/keeper"
+	"github.com/sacasnetwork/sacas/v11/x/erc20/types"
+	inflationtypes "github.com/sacasnetwork/sacas/v11/x/inflation/types"
 )
 
 const (

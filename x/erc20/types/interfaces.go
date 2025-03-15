@@ -16,9 +16,9 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/vm"
 
-	claimstypes "github.com/sacasnetwork/sacas/v1/x/claims/types"
-	"github.com/sacasnetwork/sacas/v1/x/evm/statedb"
-	evmtypes "github.com/sacasnetwork/sacas/v1/x/evm/types"
+	claimstypes "github.com/sacasnetwork/sacas/v11/x/claims/types"
+	"github.com/sacasnetwork/sacas/v11/x/evm/statedb"
+	evmtypes "github.com/sacasnetwork/sacas/v11/x/evm/types"
 )
 
 // AccountKeeper defines the expected interface needed to retrieve account info.
