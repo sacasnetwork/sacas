@@ -15,13 +15,13 @@ EXEMPT_FILES: List[str] = [
 ]
 
 LGPL3_LICENSE = [
-    "// Copyright Tharsis Labs Ltd.(Sacas)\n",
+    "// Copyright SacDev0S\n",
     "// SPDX-License-Identifier:LGPL-3.0-only\n"
 ]
 
 ENCL_LICENSE = [
-    "// Copyright Tharsis Labs Ltd.(Sacas)\n",
-    "// SPDX-License-Identifier:ENCL-1.0(https://github.com/sacas/sacas/blob/main/LICENSE)\n"
+    "// Copyright SacDev0S\n",
+    "// //\n"
 ]
 
 

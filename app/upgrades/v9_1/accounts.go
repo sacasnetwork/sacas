@@ -1,5 +1,5 @@
-// Copyright Tharsis Labs Ltd.(Sacas)
-// SPDX-License-Identifier:ENCL-1.0(https://github.com/sacas/sacas/blob/main/LICENSE)
+// Copyright SacDev0S
+// //
 
 // This accounts represent the affected accounts during the Claims record clawback incident on block 5074187
 // with the respective balance on block 5074186.

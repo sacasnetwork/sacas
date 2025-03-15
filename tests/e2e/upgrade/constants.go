@@ -1,5 +1,5 @@
-// Copyright Tharsis Labs Ltd.(Sacas)
-// SPDX-License-Identifier:ENCL-1.0(https://github.com/sacas/sacas/blob/main/LICENSE)
+// Copyright SacDev0S
+// //
 package upgrade
 
 // The constants used in the upgrade tests are defined here

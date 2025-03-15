@@ -1,4 +1,4 @@
-// Copyright Tharsis Labs Ltd.(Sacas)
+// Copyright SacDev0S
 // SPDX-License-Identifier:LGPL-3.0-only
 
 package revenue
