@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "description": 1,
+      "denom_units": [
+        {
+          "denom": "asacas",
+          "exponent": 0
+        },
+        {
+          "denom": "sacas",
+          "exponent": 18
+        }
+      ],
+      "base": "asacas",
+      "display": "asacas",
+      "name": "asacas",
+      "symbol": "SACAS"
+    }
+  ]
+}
