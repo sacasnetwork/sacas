@@ -1,0 +1,12 @@
+# argument to provide specific version of sacas node
+ARG INITIAL_VERSION
+FROM tharsishq/sacas:$INITIAL_VERSION
+
+WORKDIR /go/src/github.com/sacasnetwork/sacas
+
+COPY ./init-node.sh .
+
+# JSON-RPC server
+EXPOSE 8545
+
+CMD ["sh", "./init-node.sh"]

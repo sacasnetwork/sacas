@@ -1,0 +1,41 @@
+{
+  "metadata": [
+    {
+      "description": "The native staking and governance token of the Sacas chain",
+      "denom_units": [
+        {
+          "denom": "asacas",
+          "exponent": 0
+        },
+        {
+          "denom": "sacas",
+          "exponent": 18
+        }
+      ],
+      "base": "asacas",
+      "display": "asacas",
+      "name": "asacas",
+      "symbol": "SACAS"
+    },
+    {
+      "description": "The native staking and governance token of the Osmosis chain",
+      "denom_units": [
+        {
+          "denom": "ibc/0429A217F7AFD21E67CABA80049DD56BB0380B77E9C58C831366D6626D42F399",
+          "exponent": 0,
+          "aliases": [
+            "ibcuosmo"
+          ]
+        },
+        {
+          "denom": "OSMO",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/0429A217F7AFD21E67CABA80049DD56BB0380B77E9C58C831366D6626D42F399",
+      "display": "OSMO",
+      "name": "Osmo",
+      "symbol": "OSMO"
+    }
+  ]
+}
