@@ -1,0 +1,5 @@
+// Copyright SacDev0S . (SacaS)
+
+package types
+
+var DefaultExtraEIPs = []int64{3855}

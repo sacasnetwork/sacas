@@ -1,0 +1,22 @@
+{
+  "name": "sacas-contracts",
+  "version": "2.0.0",
+  "description": "A collection of smart contracts used in the development of the Sacas blockchain.",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "hardhat": "^2.22.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sacasnetwork/sacas.git"
+  },
+  "author": "Sacas Core Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sacasnetwork/sacas/issues"
+  },
+  "homepage": "https://github.com/sacasnetwork/sacas#readme"
+}
