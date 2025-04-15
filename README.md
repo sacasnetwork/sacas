@@ -91,6 +91,6 @@ Deploy this contract using **Remix** or **Hardhat**.
 3. Submit a pull request.
 
 ## 📦 Community
-- Twitter: [@sacasnetwork](https://twitter.com/sacasnetwork)
+- Twitter: [@sacasnetwork](https://twitter.com/sacasnetwork) | [@sacaswallet](https://twitter.com/sacaswallet)
 - Discord: [Coming Soon](#)
 - Website: [Coming Soon](#)
